@@ -1,0 +1,11 @@
+.node-type-myplan #navigation, .node-type-myplan  .breadcrumb, .node-type-myplan  .title{
+	display: none;
+	visibility: hidden; 
+}
+
+.node-type-apartado-myplan #navigation, .node-type-apartado-myplan  .breadcrumb, .node-type-apartado-myplan  .title{
+	display: none;
+	visibility: hidden; 
+}
+
+
