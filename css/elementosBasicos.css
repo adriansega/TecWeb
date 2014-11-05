@@ -3,8 +3,9 @@
 body {
     margin: 0;
     padding: 0;
+    background:rgb(245,244,242);
+    //background-color: #F0F0E8;
     //background-color:#EFF5F5;
-    background-color: #F0F0E8;
 }
 
 fieldset {

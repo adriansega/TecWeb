@@ -1,3 +1,18 @@
+#header {
+    background:rgb(245,244,242);
+    text-align:center;
+   // background-image:url("imagenes/inicio.jpg");
+   // background-repeat: no-repeat;
+   // background-position: top center;
+   // overflow:auto;
+   // width:100%;
+   // height:100%;
+}
+
+#header img{
+    width:100%;
+    height:100px;
+}
 //Cuerpo
 
 #capaMenuArriba {
@@ -6,8 +21,20 @@
 
 .menuPrimario:after {
     width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-    display: inline-block;
+    display: inline;
     content: '';
+}
+
+.elementoMenuArriba a{
+    text-align:center;
+}
+
+.elementoMenuArriba a:hover,.elementoMenuArriba img:hover {
+    background: #F9AE5E;
+    -moz-transition: background .800s;
+    -webkit-transition: background .800s;
+    -o-transition: background .800s;
+    transition: background .800s;
 }
 
 .separador{
@@ -39,6 +66,7 @@
 /* ---------------------------------------------- */
 #footer{
     text-align:center;
+    background:rgb(216,216,217);
 }
 
 #contacto{
@@ -56,7 +84,7 @@
 
 /*Menu secundario*/
 #logoMenu{
-    background:blue;
+    //background:blue;
     vertical-align:bottom;
 }
 
@@ -75,8 +103,7 @@
     text-decoration: none;
 }
 
-.elementoMenuSecundario a:hover {
-    //background:rgb(245,244,242);
+.elementoMenuSecundario a:hover , .elementoMenuSecundario img:hover {
     background: #F9AE5E;
     -moz-transition: background .800s;
     -webkit-transition: background .800s;

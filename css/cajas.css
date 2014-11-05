@@ -13,9 +13,8 @@
 
 
 #header {
-    height:70; 
+    height:80px; 
     width: 100%;
-    background: white;
 }
 
 
@@ -55,9 +54,6 @@
     width: 50px;
 }
 
-.elementoMenuArriba a{
-    text-align:center;
-}
 
 .separador{
     position: relative;
@@ -99,6 +95,7 @@
     margin-left:-10%;
     margin-top:30%;
     width:70%; 
+    margin-bottom:20%;
 }
 
 .elementoMenuSecundario img {
