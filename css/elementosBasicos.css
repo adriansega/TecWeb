@@ -1,0 +1,38 @@
+/* ** HTML elements */
+
+body {
+    margin: 0;
+    padding: 0;
+    //background-color:#EFF5F5;
+    background-color: #F0F0E8;
+}
+
+fieldset {
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+hr {
+    height: 1px;
+    border: 1px solid gray;
+}
+img {
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+}
+th {
+    text-align: left; /* LTR */
+    padding-right: 1em; /* LTR */
+    border-bottom: 3px solid #ccc;
+}
+
+a {
+    color: #0e8eab; 
+}
+

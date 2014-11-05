@@ -1,0 +1,54 @@
+//Cuerpo
+
+#capaMenuArriba {
+    text-align: center;
+}
+
+.menuPrimario:after {
+    width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+    display: inline-block;
+    content: '';
+}
+
+.separador{
+    border-bottom-color: #8fc6e5;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.body_elements{
+    background-color: #F1F1F1;
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    box-shadow: 2px 2px 5px #999;
+}
+
+/* ---------------------------------------------- */
+/*Camino de hormigas                              */
+/* ---------------------------------------------- */
+.caminoHormigas {
+    display: inline;
+    padding-bottom: .5em;
+}
+
+/*Importante*/
+.section .caminoHormigas {
+    margin-left: 10%;
+}
+
+/* ---------------------------------------------- */
+/* Pie de página
+/* ---------------------------------------------- */
+
+#contacto{
+    font-size: x-small;
+    font-weight: bold;
+    display: block;
+}
+
+
+#mapaWeb {
+    text-align: right;
+    padding-top: 35px;
+    padding-right: 10px;
+}
