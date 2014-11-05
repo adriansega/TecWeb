@@ -1,7 +1,7 @@
 //Cuerpo
 
 #capaMenuArriba {
-    text-align: center;
+    text-align:center;
 }
 
 .menuPrimario:after {
@@ -16,39 +16,71 @@
     border-bottom-style: solid;
 }
 
-.body_elements{
-    background-color: #F1F1F1;
-    -webkit-box-shadow: 2px 2px 5px #999;
-    -moz-box-shadow: 2px 2px 5px #999;
-    box-shadow: 2px 2px 5px #999;
+
+.separador2{
+    border-bottom-color: #8fc6e5;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 }
+
 
 /* ---------------------------------------------- */
 /*Camino de hormigas                              */
 /* ---------------------------------------------- */
 .caminoHormigas {
-    display: inline;
+    display: inline-block;
     padding-bottom: .5em;
-}
-
-/*Importante*/
-.section .caminoHormigas {
-    margin-left: 10%;
+    margin-left: 1%;
+    vertical-align:bottom;
 }
 
 /* ---------------------------------------------- */
 /* Pie de página
 /* ---------------------------------------------- */
+#footer{
+    text-align:center;
+}
 
 #contacto{
     font-size: x-small;
     font-weight: bold;
-    display: block;
+    display: inline;
 }
 
 
-#mapaWeb {
-    text-align: right;
-    padding-top: 35px;
-    padding-right: 10px;
+#contacto a:link,a:hover, a:focus  {
+    text-decoration: none;
+    color:black;
 }
+
+
+/*Menu secundario*/
+#logoMenu{
+    background:blue;
+    vertical-align:bottom;
+}
+
+
+#menuSecundario {
+    border-color: #8fc6e5;
+    border-width: 2px;
+    border-style: solid;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    text-align:center;
+}
+
+.elementoMenuSecundario a {
+    text-decoration: none;
+}
+
+.elementoMenuSecundario a:hover {
+    //background:rgb(245,244,242);
+    background: #F9AE5E;
+    -moz-transition: background .800s;
+    -webkit-transition: background .800s;
+    -o-transition: background .800s;
+    transition: background .800s;
+}
+

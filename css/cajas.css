@@ -46,13 +46,17 @@
 .elementoMenuArriba {
     display:table-cell; 
     width:6%; /* 100/6 elementos = 18 ?????¿¿ */
-    background: red;
     text-align:center;
+    //background: red;
 }
 
 .elementoMenuArriba img{
     height: 45px;
     width: 50px;
+}
+
+.elementoMenuArriba a{
+    text-align:center;
 }
 
 .separador{
@@ -62,24 +66,66 @@
     top: 72px;
 }
 
+
 #content {
-    float: left; /* LTR */
     width: 100%;
     margin-left: 0; /* LTR */
-    margin-right: -800px; /* LTR */ /* Negative value of #content's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
     margin-top: 5em; /* Set this to the same value as the capaMenuArriba height above. */
+    //background:red;
 }
 
 #content .section {	
-    margin-left: -30px;
+    margin-left: 30px;
     margin-right: 10px;
     width: 95%;
 }
 
-#content-area{	
-    padding-left: 25px;
-    margin-top: 0px;
+
+/*Menu secundario*/
+.columna1 {
+    float:left;
+    width:15%;
+    //background:blue;
+}
+
+#logoMenu{
+    display:inline;
+    margin-bottom:10px;
+}
+
+
+#menuSecundario {
+    margin-left:-10%;
+    margin-top:30%;
+    width:70%; 
+}
+
+.elementoMenuSecundario img {
+    height: 45px;
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+
+/*Fin de Menu secundario*/
+
+.columna2 {
+    float:left;
+    width:85%;
+    //background:red;
+}
+
+#textoCuerpo{
+    margin-top:5%;
+    //background:yellow;
+}
+
+#textoCuerpo p:first-child:first-letter{
+    text-transform:capitalize;
+    font-size:140%;
+    color:red;
 }
 
 .clear-block {
@@ -87,7 +133,7 @@
 }
 
 /* Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html ) */
-.clear-block:after, .clearfix:after {
+.clearfix:after {
     content: " ";
     display: block;
     height: 0;
@@ -95,22 +141,6 @@
     visibility: hidden;
 }
 
-#body_cuerpo{
-    width: 100%;
-    margin-top: 10px;
-    /* margin-left: 1%;*/
-}
-
-#quienesSomos{
-    margin-top: 50px;
-    margin-left: 10%;
-}
-
-#capaLogoSeccion {
-    position: absolute;
-    left: 2px;
-    top: 120px;
-}
 
 #logoSeccion{
     height: 50px;
@@ -127,12 +157,10 @@
 }
 
 .body_image{    
-    /*  background-size: 100% 100%;*/
     width: 18%;
     height: 90%;
     float: right;
     margin-right: 20px;
-    /* background-color: aqua;*/   
 }
 
 
