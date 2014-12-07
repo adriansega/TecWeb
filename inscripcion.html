@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
+
+<head>
+<title>AFIM21. Asociacion de personas con discapacidad de Almería</title>
+<meta property="og:title" content=" Quienes Somos">
+<meta property="og:type" content="afim21">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="AFIM21 Almería">
+<meta property="og:description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
+<meta name="description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
+<meta name="keywords" content="asociación, discapacidad, intelectual, almería">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" media="all" href="css/elementosBasicos.css">
+<link type="text/css" rel="stylesheet" media="all" href="css/cajas.css">
+<link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css">
+<link type="text/css" rel="stylesheet" media="all" href="css/principal.css">
+<script type="text/javascript">
+window.onload = function () {
+document.formularioContacto.nombre.focus();
+document.formularioContacto.addEventListener('submit', validarFormulario);
+}
+ 
+function validarFormulario(evObject) {
+evObject.preventDefault();
+var todoCorrecto = true;
+var formulario = document.formularioContacto;
+for (var i=0; i<formulario.length; i++) {
+                if(formulario[i].type =='text') {
+                               if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
+                               alert (formulario[i].name.charAt(0).toUpperCase()+ formulario[i].name.slice(1)+' no puede estar vacío o contener sólo espacios en blanco');
+                               todoCorrecto=false;
+                               }
+                }
+                }
+if (todoCorrecto ==true) {formulario.submit();}
+}
+</script>
+</head>
+
+<body style="background-color:#FFFFFF">
+<div id="page-wrapper">
+    <div id="header">
+        <a href="afim21.html" title="Inicio" rel="home" ><img src="imagenes/logo.jpg" alt="Inicio"></a>
+    </div> <!-- /#header -->
+
+    <div id="main-wrapper" class="clearfix ">
+        <div id="capaMenuArriba">
+            <div id="tablaMenuArriba">
+                <div class="menuArriba">
+
+                    <div class="elementoMenuArriba">
+                        <a href="afim21.html"><img src="imagenes/inicio.png" title="INICIO" alt="INICIO">
+                            <div>Inicio</div></a>                            
+                    </div>                                     
+
+                    <div class="elementoMenuArriba">
+                        <a href="actividades.html"><img src="imagenes/actividades.png" title="Actividades" alt="Actividades"/>
+                            <div>Actividades</div></a>                            
+                    </div>                                     
+
+                    <div class="elementoMenuArriba">
+                        <a href="horario.html"><img src="imagenes/horario.png" title="Horario" alt="Horario"/>
+                            <div>Horario</div></a>
+                    </div>                                     
+
+                    <div class="elementoMenuArriba">
+                        <a href="tarifas.html"><img src="imagenes/tarifas.png" title="Tarifas" alt="Tarifas"/>
+                            <div>Tarifas</div></a>                            
+                    </div>                                     
+
+                    <div class="elementoMenuArriba">
+                        <a href="noticias.html"><img src="imagenes/noticias.png" title="Noticias" alt="Noticias"/>
+                            <div>Noticias</div></a>                            
+                    </div>                                     
+
+                    <div class="elementoMenuArriba">
+                        <a href="social.html"><img src="imagenes/social.png" title="Social" alt="Social"/>
+                            <div>Social</div></a>                            
+                    </div>                                     
+
+                </div>
+            </div> <!-- #tablaMenuArriba -->
+        </div> <!-- #capaMenuArriba -->
+        <div class="separador"> </div>
+
+        <div id="content"> 
+            <div class="section">
+                <div id="logoMenu"> <a href="inicio.html"><img id="logoSeccion" src="imagenes/social.png" title="Inicio" alt="Inicio"></a></div>
+                <div class="caminoHormigas ">
+                    <a href="inicio">Inicio</a> › <a href="inicio.html">Contáctanos</a> 
+                </div> 
+                <div id="content-area">
+                    <div class="columna1">
+                        <div id="menuSecundario">
+                            <div class="elementoMenuSecundario"> <a href="quienes.html" alt="Quienes Somos"><img src="imagenes/social.png" alt="Quienes Somos"/>Quienes Somos</a></div>
+                            <div class="elementoMenuSecundario"> <a href="equipo.html" alt="Equipo"><img src="imagenes/datos_0.gif" alt="Equipo"/>Equipo</a></div>
+                            <div class="elementoMenuSecundario"> <a href="estatutos.html" alt="Estatutos"><img src="imagenes/MISION.gif" alt="Estatutos"/>Estatutos</a></div>
+                        </div>
+                    </div>
+                    <div class="columna2">
+
+                        <div id="textoCuerpo">
+                        	<!--Formulario de contacto-->
+                               	<h5>Si deseas contactar con nosotros, rellena este formulario:</h5>
+                        		<br/>
+                        		<form name="formularioContacto" class="formularioTipo1" method="get" action="nuriaguzmans@gmail.com" enctyp"text/plain"					                                >
+								Nombre de niño/a * <input type="text" name="nombre" size="25" maxlength="50"><br><br>
+								Apellidos * <input type="text" name="apellidos" size="35" maxlength="100">
+								<br/><br/>
+								<label for="edad">Edad *</label> 
+								<select id="edad" name="edad">
+  								<option value="" selected="selected">- selecciona -</option>
+  								<option value="4">4</option>
+  								<option value="5">5</option>
+  								<option value="6">6</option>
+  								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								</select>
+								Nombre del tutor/a legal * <input type="text" name="tutor" size="15" maxlength="50">
+								<br/><br/>
+								Apellidos * <input type="text" name="apellidosTutor" size="15" maxlength="50">
+								<br/><br/>
+								Correo electrónico <input type="text" value="@" name="correo" size="40" maxlength="100">
+								<br/><br/>
+								Teléfono *: <input type="text" name="poblacion" size="9" maxlength="50">
+								<br/><br/>
+								Actividad * <input type="radio" name="taller" value="tallerJuegos">Taller de aprendizaje a través del juego
+								<input type="radio" name="taller" value="tallerExit">Taller D-exit
+								<br><br>
+								Mensaje:<br>
+								<textarea cols="75" rows="8" name="opinion">Escriba aquí su mensaje...</textarea>
+								</select>
+								<br/><br/>			
+								<input type="submit" value="Enviar formulario">
+								<input type="Reset" value="Borrar formulario">	
+								</form>
+								<br/><br/>
+                        </div> <!--textoCuerpo -->
+                    </div>
+
+            </div></div> <!-- /content-area /.section, -->
+        </div> <!-- /#content, -->
+    </div> <!-- /#main-wrapper -->
+    <div id="footer">
+        <span id="contacto">Contacto con AFIM21 Almeria: Tlf 678468545 | nuriaguzmans@gmail.com | 
+            <span class="aviso_legals">Aviso Legal</span> | <a title="Mapa Web" href="sitemap" alt="Mapa Web" >Mapa Web</a> </span>
+    </div> <!-- /#footer -->
+</div> <!-- /#page-wrapper -->
+
+</body>
+</html>

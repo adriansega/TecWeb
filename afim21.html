@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
 
 <head>
@@ -15,13 +15,29 @@
 <link type="text/css" rel="stylesheet" media="all" href="css/cajas.css">
 <link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css">
 <link type="text/css" rel="stylesheet" media="all" href="css/principal.css">
+<!-- Incluimos la libreria jQuery -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Incluimos el plugin -->
+<script src="js/bjqs.min.js"></script>
+<script src="js/script.js"></script>        
+<!-- Importamos nuestra hoja de estilos CSS -->
+<link rel="stylesheet" href="css/estilos_slider.css" />
 </head>
 
-<body>
+<body style="background-color:#FFFFFF">
 <div id="page-wrapper">
-    <div id="header">
-        <a href="afim21.html" title="Inicio" rel="home" ><img src="imagenes/logo.jpg" alt="Inicio"></a>
-    </div> <!-- /#header -->
+<div id="slider">
+        <ul class="bjqs">
+            <li>
+                <img src="imagenes/header.jpg"/></li>
+            <li>
+                <img src="imagenes/H8llfAPWnPCVqV3YBQ.jpeg"/></li>
+            <li>
+                <img src="imagenes/Galaxia.jpg"/></li>
+			<li>
+                <img src="imagenes/Galaxia.jpg" /></li>
+        </ul>
+  </div>
 
     <div id="main-wrapper" class="clearfix ">
         <div id="capaMenuArriba">
@@ -31,7 +47,7 @@
                     <div class="elementoMenuArriba">
                         <a href="afim21.html"><img src="imagenes/inicio.png" title="INICIO" alt="INICIO">
                             <div>Inicio</div></a>                            
-                    </div>                                     
+                    </div>                                    
 
                     <div class="elementoMenuArriba">
                         <a href="actividades.html"><img src="imagenes/actividades.png" title="Actividades" alt="Actividades"/>
@@ -54,8 +70,8 @@
                     </div>                                     
 
                     <div class="elementoMenuArriba">
-                        <a href="social.html"><img src="imagenes/social.png" title="Social" alt="Social"/>
-                            <div>Social</div></a>                            
+                        <a href="inscripcion.html"><img src="imagenes/noticias.png" title="Contáctanos" alt="Contáctanos"/>
+                            <div>Inscripción</div></a>                            
                     </div>                                     
 
                 </div>
