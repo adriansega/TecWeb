@@ -81,6 +81,12 @@
     width:15%;
 }
 
+#logos img{
+	display:inline-table;
+	width:40;
+	height:40%;
+}
+
 #logoMenu{
     display:inline;
     margin-bottom:10px;
