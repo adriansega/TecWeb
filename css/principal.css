@@ -3,6 +3,7 @@
     text-align:center;
     margin:30px auto; 
     height:100%;
+	background-color:#FFFFFF;
 }
 
 #header img{
@@ -14,6 +15,9 @@
 }
 
 /*Css del body*/
+#body{
+	background-color:#FFFFFF;
+}
 .elementoMenuArriba a{
 	text-decoration: none;
 	text-align:center;

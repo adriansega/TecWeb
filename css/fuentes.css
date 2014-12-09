@@ -10,6 +10,7 @@
  */
 body {
   font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+  background-color:#FFFFFF;
 }
 
 #page-wrapper {
@@ -89,4 +90,9 @@ h4, h5, h6 {
     color: #3714F0;
     font-size: 9pt;
     font-weight: bold;
+}
+
+#titulo{
+	font-weight:bold;
+	color:#990000;
 }

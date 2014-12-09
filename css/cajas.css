@@ -4,7 +4,6 @@
  *   display, position, float, clear, width, height, min-width, min-height
  *   margin, border, padding, overflow
  */
-
 #page-wrapper{
     margin-left: auto;
     margin-right: auto;
@@ -30,8 +29,6 @@
     top: 0px;
     left: 0px;
     height: 75px;
-    //border: 1px solid gray;
-    //    background: red;
 }
 
 #tablaMenuArriba {
@@ -47,7 +44,6 @@
     display:table-cell; 
     width:6%; /* 100/6 elementos = 18 ?????¿¿ */
     text-align:center;
-    //background: red;
 }
 
 .elementoMenuArriba img{
@@ -66,10 +62,10 @@
 
 #content {
     width: 100%;
+	height:100%;
     margin-left: 0; /* LTR */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
     margin-top: 5em; /* Set this to the same value as the capaMenuArriba height above. */
-    //background:red;
 }
 
 #content .section {	
@@ -83,7 +79,6 @@
 .columna1 {
     float:left;
     width:15%;
-    //background:blue;
 }
 
 #logoMenu{
@@ -112,12 +107,10 @@
 .columna2 {
     float:left;
     width:85%;
-    //background:red;
 }
 
 #textoCuerpo{
     margin-top:5%;
-    //background:yellow;
 }
 
 #textoCuerpo p:first-child:first-letter{
@@ -145,7 +138,6 @@
     width: 50px;  
 }
 
-
 .body_text{
     padding-left: 20px;
     padding-top: 5px;
@@ -172,4 +164,17 @@
     margin-right: 2%;
 }
 
+.video{
+	position:relative;
+	padding-bottom:56.25%;
+	overflow:hidden;	
+}
+
+.video iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
 
