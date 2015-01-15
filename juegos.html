@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
 
@@ -27,32 +28,7 @@
         <div id="capaMenuArriba">
             <div id="tablaMenuArriba">
                 <div class="menuArriba">
-
-                    <div class="elementoMenuArriba">
-                        <a href="afim21.html"><img src="imagenes/inicio.png" title="INICIO" alt="INICIO">
-                            <div>Inicio</div></a>                            
-                    </div>                                    
-
-                    <div class="elementoMenuArriba">
-                        <a href="actividades.html"><img src="imagenes/actividades.png" title="Actividades" alt="Actividades"/>
-                            <div>Actividades</div></a>                            
-                    </div>                                     
-
-                    <div class="elementoMenuArriba">
-                        <a href="horario.html"><img src="imagenes/horario.png" title="Horario" alt="Horario"/>
-                            <div>Horario</div></a>
-                    </div>                                                
-
-                    <div class="elementoMenuArriba">
-                        <a href="juegos.html"><img src="imagenes/noticias.png" title="Juegos" alt="Juegos"/>
-                            <div>Juegos</div></a>                            
-                    </div>                                     
-
-                    <div class="elementoMenuArriba">
-                        <a href="inscripcion.html"><img src="imagenes/noticias.png" title="Contáctanos" alt="Contáctanos"/>
-                            <div>Inscripción</div></a>                            
-                    </div>                                     
-
+                    <?php include_once "./php/menu.php"; ?>
                 </div>
             </div> <!-- #tablaMenuArriba -->
         </div> <!-- #capaMenuArriba -->
@@ -60,17 +36,11 @@
 
         <div id="content"> 
             <div class="section">
-                <div id="logoMenu"> <a href="inicio.html"><img id="logoSeccion" src="imagenes/social.png" title="Inicio" alt="Inicio"></a></div>
-                <div class="caminoHormigas ">
-                    <a href="afim21.html">Inicio</a> › <a href="juegos.html">Juegos</a> 
-                </div> 
+                <div id="logoMenu"> <a href="afim21.html"><img id="logoSeccion" src="imagenes/noticias.png" title="Inicio" alt="Inicio"></a></div>
+                        <?php include_once "./php/camino-hormigas.php"; ?>
                 <div id="content-area">
                     <div class="columna1">
-                        <div id="menuSecundario">
-                            <div class="elementoMenuSecundario"> <a href="quienes.html" alt="Quienes Somos"><img src="imagenes/social.png" alt="Quienes Somos"/>Quienes Somos</a></div>
-                            <div class="elementoMenuSecundario"> <a href="equipo.html" alt="Equipo"><img src="imagenes/datos_0.gif" alt="Equipo"/>Equipo</a></div>
-                            <div class="elementoMenuSecundario"> <a href="estatutos.html" alt="Estatutos"><img src="imagenes/MISION.gif" alt="Estatutos"/>Estatutos</a></div>
-                        </div>
+                        <?php include_once "./php/menu-lateral.php"; ?>
                     </div>
                     <div class="columna2">
 
