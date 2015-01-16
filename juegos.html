@@ -45,51 +45,7 @@
                     <div class="columna2">
 
                         <div id="textoCuerpo">
-                        	<!--Formulario de contacto-->
-                               	<h5>Si deseas contactar con nosotros, rellena este formulario:</h5>
-                        		<br/>
-                        		<form name="formularioContacto" class="formularioTipo1" method="get" action="nuriaguzmans@gmail.com" enctyp"text/plain"					                                >
-								Nombre de niño/a * <input type="text" name="nombre" size="25" maxlength="50"><br><br>
-								Apellidos * <input type="text" name="apellidos" size="35" maxlength="100">
-								<br/><br/>
-								<label for="edad">Edad *</label> 
-								<select id="edad" name="edad">
-  								<option value="" selected="selected">- selecciona -</option>
-  								<option value="4">4</option>
-  								<option value="5">5</option>
-  								<option value="6">6</option>
-  								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-								<option value="11">11</option>
-								<option value="12">12</option>
-								<option value="13">13</option>
-								<option value="14">14</option>
-								<option value="15">15</option>
-								<option value="16">16</option>
-								<option value="17">17</option>
-								<option value="18">18</option>
-								</select>
-								Nombre del tutor/a legal * <input type="text" name="tutor" size="15" maxlength="50">
-								<br/><br/>
-								Apellidos * <input type="text" name="apellidosTutor" size="15" maxlength="50">
-								<br/><br/>
-								Correo electrónico <input type="text" value="@" name="correo" size="40" maxlength="100">
-								<br/><br/>
-								Teléfono *: <input type="text" name="poblacion" size="9" maxlength="50">
-								<br/><br/>
-								Actividad * <input type="radio" name="taller" value="tallerJuegos">Taller de aprendizaje a través del juego
-								<input type="radio" name="taller" value="tallerExit">Taller D-exit
-								<br><br>
-								Mensaje:<br>
-								<textarea cols="75" rows="8" name="opinion">Escriba aquí su mensaje...</textarea>
-								</select>
-								<br/><br/>			
-								<input type="submit" value="Enviar formulario">
-								<input type="Reset" value="Borrar formulario">	
-								</form>
-								<br/><br/>
+                        	 <?php include_once "./php/juego.php"; ?>
                         </div> <!--textoCuerpo -->
                     </div>
 
