@@ -1,0 +1,43 @@
+body{
+
+background:#ffffff;
+
+}h3{
+
+    text-align: center;
+
+}form.monitores {
+
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #DDDDDD;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 30px;
+    width: 350px;
+    box-shadow:0px 0px 20px gray;
+    border-radius:10px;
+
+
+}form.monitores input[type="submit"] {
+
+    font-weight: bold;
+    padding: 4px 20px;
+
+
+
+}form.monitores input[type="Reset"] {
+
+    position: inline-block;
+    font-weight: bold;
+    padding: 4px 20px;
+
+
+
+/*}.error{
+
+    color: red;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+*/
+}
