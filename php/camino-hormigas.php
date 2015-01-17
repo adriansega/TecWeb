@@ -55,7 +55,7 @@ default:
 <?php
 if($pagina!='afim21'){?>
                 > <a href="<?php echo $_SERVER["REQUEST_URI"];?>">
-               <?php echo mysqli_result($resultado,$id);?>
+               <?php echo utf8_encode(mysqli_result($resultado,$id));?>
                 </a>
 <?php } ?>
 </div> 

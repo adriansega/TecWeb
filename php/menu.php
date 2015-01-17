@@ -48,7 +48,7 @@ $id=0;
 
                     <div class="elementoMenuArriba">
                         <a href="inscripcion.html"><img src="imagenes/noticias.png" title="Contáctanos" alt="Contáctanos"/>
-                        <div><?php echo mysqli_result($resultado,$id++); ?></div></a>                            
+                        <div><?php echo utf8_encode(mysqli_result($resultado,$id++)); ?></div></a>                            
                     </div>                                     
 <?php 
 mysqli_free_result($resultado);
