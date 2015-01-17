@@ -42,7 +42,7 @@ $id=0;
                     </div>                                                
 
                     <div class="elementoMenuArriba">
-                        <a href="juegos.html"><img src="imagenes/noticias.png" title="Juegos" alt="Juegos"/>
+                        <a href="juegos.html"><img src="imagenes/dice.png" title="Juegos" alt="Juegos"/>
                         <div><?php echo mysqli_result($resultado,$id++); ?></div></a>                            
                     </div>                                     
 

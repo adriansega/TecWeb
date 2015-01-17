@@ -17,12 +17,12 @@
 		
 		<div style="text-align:center;">
 		<table border=0 width=80% style="margin: 0 auto;">
-		<td><b><a href='http://localhost/afim21/anadirMonitor.html'>Nuevo monitor</a></b></td>
+		<td><b><a href='http://localhost/TecWeb/anadirMonitor.html'>Nuevo monitor</a></b></td>
 		<p></p>
 		
 		<table border=1 width="80%" style="margin: 0 auto;">
 			<thead>
-				<tr>
+				<tr bgcolor="#F1F1F1">
 					<td><b>Nombre</b></td>
 					<td><b>Apellidos</b></td>
 					<td><b>Descripcion</b></td>

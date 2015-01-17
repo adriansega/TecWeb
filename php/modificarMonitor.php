@@ -25,6 +25,6 @@
               
     } 
     include_once "cerrar_conexion.php";
-    echo "<a href='http://localhost/afim21/php/monitores.php'>VOLVER</a>";
+    echo "<a href='http://localhost/TecWeb/php/monitores.php'>VOLVER</a>";
   
   ?>
