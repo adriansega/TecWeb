@@ -4,7 +4,6 @@ include_once "conexion.php";
 													
 $sql = "SELECT * FROM `juegos` WHERE 1";
 $resultado = mysqli_query($con,$sql);
-
 echo "<table border = '0' style=".'"'."text-align:".'center'.'"'."> \n";
 while($rows=mysqli_fetch_array($resultado)){ 
 $image=$rows['imagenJuego'];

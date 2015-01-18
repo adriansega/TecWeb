@@ -1,26 +1,26 @@
-<?php session_start();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
+<?php session_start();?>
 <head>
 <title>AFIM21. Asociacion de personas con discapacidad de Almería</title>
-<meta property="og:title" content=" Quienes Somos">
-<meta property="og:type" content="afim21">
-<meta property="og:url" content="">
-<meta property="og:site_name" content="AFIM21 Almería">
-<meta property="og:description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
-<meta name="description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
-<meta name="keywords" content="asociación, discapacidad, intelectual, almería">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="text/css" rel="stylesheet" media="all" href="css/elementosBasicos.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/cajas.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/principal.css">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta content="Quienes Somos" />
+<meta content="afim21" />
+<meta content="" />
+<meta content="AFIM21 Almería" />
+<meta content="AFIM21. Asociación de personas con discapacidad en Almería." />
+<meta name="description" content="AFIM21. Asociación de personas con discapacidad en Almería." />
+<meta name="keywords" content="asociación, discapacidad, intelectual, almería" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" media="all" href="css/elementosBasicos.css" />
+<link type="text/css" rel="stylesheet" media="all" href="css/cajas.css" />
+<link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css" />
+<link type="text/css" rel="stylesheet" media="all" href="css/principal.css" />
 <!-- Incluimos la libreria jQuery -->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <!-- Incluimos el plugin -->
-<script src="js/bjqs.min.js"></script>
-<script src="js/script.js"></script>        
+<script src="js/bjqs.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>        
 <!-- Importamos nuestra hoja de estilos CSS -->
 <link rel="stylesheet" href="css/estilos_slider.css" />
 </head>
@@ -30,15 +30,15 @@
 <div id="slider">
         <ul class="bjqs">
             <li>
-                <img src="imagenes/header.jpg"/></li>
+                <img src="imagenes/header.jpg" alt="slide1"/></li>
             <li>
-                <img src="imagenes/H8llfAPWnPCVqV3YBQ.jpeg"/></li>
+                <img src="imagenes/H8llfAPWnPCVqV3YBQ.jpeg" alt="slide2"/></li>
             <li>
-                <img src="imagenes/Galaxia.jpg"/></li>
+                <img src="imagenes/Galaxia.jpg" alt="slide3"/></li>
 			<li>
-                <img src="imagenes/Galaxia.jpg" /></li>
+                <img src="imagenes/Galaxia.jpg" alt="slide3"/></li>
         </ul>
-  </div>
+  </div><!-- /#slider -->
 
     <div id="main-wrapper" class="clearfix ">
         <div id="capaMenuArriba">
@@ -52,12 +52,16 @@
 
         <div id="content"> 
             <div class="section">
-                <div id="logoMenu"> <a href="afim21.html"><img id="logoSeccion" src="imagenes/inicio.png" title="Inicio" alt="Inicio"></a></div>
+                <div id="logoMenu"> <a href="afim21.html"><img id="logoSeccion" src="imagenes/inicio.png" title="Inicio" alt="Inicio" /></a></div>
                         <?php include_once "./php/camino-hormigas.php"; ?>
                 <div id="content-area">
                     <div class="columna1">
                         <?php include_once "./php/menu-lateral.php"; ?>
-                    </div>
+						<p id="textoBlog"> Visítanos en:<br /><br /></p>
+						<div id="logoBlog"><a href="http://afim21.blogspot.com.es/" target="_blank"><img src="imagenes/blogspot.gif" alt="blog"/></a>	                        </div> <!-- #logoBlog -->			
+						<div id="logoFacebook"><a href="https://www.facebook.com/deviriberia/posts/528134283974532" target="_blank"><img src=   	  	                        "imagenes/logoFacebook.png" alt="blog"/></a></div></div> <!-- #logoFacebook -->
+                    </div><!-- #columna1 -->
+					
                     <div class="columna2">
 
                         <div id="textoCuerpo">
@@ -69,14 +73,14 @@
                             <p> ¿A qué esperas? ¡Apúntate ya! </p><br />						
                         </div> <!--textoCuerpo -->
 						<p style="color:#0033CC"><strong>Organizado por:</strong></p><br />
-							<img style="width:30%; height:30%; padding-left:35%;" src="imagenes/logo completo con texto de base.jpg" /><br /><br />
+							<img style="width:30%; height:30%; padding-left:35%;" src="imagenes/logocompletocontextodebase.jpg" alt="logoAfim"/>	                            <br/><br/>
 						<p style="color:#0033CC"><strong>Colaboran:</strong></p>
 						<div id="logos">
-								<a href="http://www.fapacealmeria.org/" target="_blank"><img src="imagenes/Fapace.jpg" /></a>
-								<a href="http://asociacionasacal.blogspot.com.es/" target="_blank"><img src="imagenes/altas capacidades.jpg" /></a>
-								<img src="imagenes/palmera.jpg" />
-								<a href="hhttp://www.orionalmeria.com/" target="_blank"><img src="imagenes/orion.png" /></a>
-								<img src="imagenes/devir.jpg" />
+								<a href="http://www.fapacealmeria.org/" target="_blank"><img src="imagenes/Fapace.jpg" alt="fapace"/></a>
+								<a href="http://asociacionasacal.blogspot.com.es/" target="_blank"><img src="imagenes/altascapacidades.jpg" alt=    	                                "asacal"/></a>
+								<img src="imagenes/palmera.jpg" alt="palmera"/>
+								<a href="http://www.orionalmeria.com/" target="_blank"><img src="imagenes/orion.png" alt="orion"/></a>
+								<img src="imagenes/devir.jpg" alt="devir"/>
 							</div>	
 						<br/><br/>
                     </div>
@@ -86,7 +90,7 @@
     </div> <!-- /#main-wrapper -->
     <div id="footer">
         <span id="contacto">Contacto con AFIM21 Almeria: Tlf 678468545 | nuriaguzmans@gmail.com&nbsp; | 
-           <a title="Aviso Legal" href="legal.html" alt="Aviso Legal">Aviso Legal</a> | <a title="Mapa Web" href="sitemap.html" alt="Mapa Web" >Mapa Web</a> </span>
+           <a title="Aviso Legal" href="legal.html">Aviso Legal</a> | <a title="Mapa Web" href="sitemap.html">Mapa           Web</a> </span>
     </div> <!-- /#footer -->
 </div> <!-- /#page-wrapper -->
 

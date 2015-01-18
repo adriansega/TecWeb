@@ -28,6 +28,15 @@ body {
   line-height: 1.286em; /* 14px x 1.286 = 18px */
 }
 
+p{
+	color:color:#0033CC;
+}
+
+#textoBlog{
+	color:#3714F0;
+	font-weight:bold;
+}
+
 body, caption, th, td, input, textarea, select, option, legend, fieldset {
   font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
