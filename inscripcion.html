@@ -1,21 +1,18 @@
-<?php session_start();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
+<?php session_start();?>
 <head>
-<title>AFIM21. Asociacion de personas con discapacidad de Almería</title>
-<meta property="og:title" content=" Quienes Somos">
-<meta property="og:type" content="afim21">
-<meta property="og:url" content="">
-<meta property="og:site_name" content="AFIM21 Almería">
-<meta property="og:description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
-<meta name="description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
-<meta name="keywords" content="asociación, discapacidad, intelectual, almería">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="text/css" rel="stylesheet" media="all" href="css/elementosBasicos.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/cajas.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/principal.css">
+<title>Inscripcion - Página web de afim21</title>
+<meta property="og:title" content=" Quienes Somos" />
+<meta property="og:type" content="afim21" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="AFIM21 Almería" />
+<meta name="keywords" content="asociación, discapacidad, intelectual, almería" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" media="all" href="css/elementosBasicos.css" />
+<link type="text/css" rel="stylesheet" media="all" href="css/cajas.css" />
+<link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css" />
+<link type="text/css" rel="stylesheet" media="all" href="css/principal.css" />
 <script type="text/javascript">
 window.onload = function () {
 document.formularioContacto.nombre.focus();
@@ -42,7 +39,7 @@ if (todoCorrecto ==true) {formulario.submit();}
 <body>
 <div id="page-wrapper">
     <div id="header">
-        <a href="afim21.html" title="Inicio" rel="home" ><img src="imagenes/logo.jpg" alt="Inicio"></a>
+        <a href="afim21.html" title="Inicio" rel="home" ><img src="imagenes/logo.jpg" alt="Inicio"/></a>
     </div> <!-- /#header -->
 
     <div id="main-wrapper" class="clearfix ">
@@ -70,8 +67,17 @@ if (todoCorrecto ==true) {formulario.submit();}
 
                         <div id="textoCuerpo">
                         	<!--Formulario de contacto-->
-                               	<h5>Si deseas contactar con nosotros, rellena este formulario:</h5>
-                        		<br/>
+                               	<p>TALLER APRENDIZAJE A TRAVÉS DEL JUEGO</p>
+ 
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MATRÍCULA:  15 EUROS</p>
+ 
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENSUALIDAD:  12 EUROS</p>
+ 
+								<p>Nota: Actividad subvencionable con becas NEAE</p>
+ 
+								<p style="font-weight: bold;">¡Curso gratuito para personas en riesgo de exclusión  	                                social o desempleados!</p>
+								<p style="font-weight: bold;">¡Cineforum gratuito!</p>
+                        		<br/><br />
                         		<form name="formularioContacto" class="formularioTipo1" method="get" action="nuriaguzmans@gmail.com" enctyp"text/plain"					                                >
 								Nombre de niño/a * <input type="text" name="nombre" size="25" maxlength="50"><br><br>
 								Apellidos * <input type="text" name="apellidos" size="35" maxlength="100">
@@ -104,7 +110,7 @@ if (todoCorrecto ==true) {formulario.submit();}
 								Teléfono *: <input type="text" name="poblacion" size="9" maxlength="50">
 								<br/><br/>
 								Actividad * <input type="radio" name="taller" value="tallerJuegos">Taller de aprendizaje a través del juego
-								<input type="radio" name="taller" value="tallerExit">Cineforum
+								<input type="radio" name="cine" value="cineForum">Cineforum
 								<br><br>
 								Mensaje:<br>
 								<textarea cols="75" rows="8" name="opinion">Escriba aquí su mensaje...</textarea>

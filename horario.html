@@ -1,42 +1,18 @@
-<?php session_start();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
+<?php session_start();?>
 <head>
-<title>AFIM21. Asociacion de personas con discapacidad de Almería</title>
+<title>Horario - Página web de afim21</title>
 <meta property="og:title" content=" Quienes Somos">
 <meta property="og:type" content="afim21">
 <meta property="og:url" content="">
 <meta property="og:site_name" content="AFIM21 Almería">
-<meta property="og:description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
-<meta name="description" content="AFIM21. Asociación de personas con discapacidad en Almería.">
 <meta name="keywords" content="asociación, discapacidad, intelectual, almería">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link type="text/css" rel="stylesheet" media="all" href="css/elementosBasicos.css">
 <link type="text/css" rel="stylesheet" media="all" href="css/cajas.css">
 <link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css">
 <link type="text/css" rel="stylesheet" media="all" href="css/principal.css">
-<script type="text/javascript">
-window.onload = function () {
-document.formularioContacto.nombre.focus();
-document.formularioContacto.addEventListener('submit', validarFormulario);
-}
- 
-function validarFormulario(evObject) {
-evObject.preventDefault();
-var todoCorrecto = true;
-var formulario = document.formularioContacto;
-for (var i=0; i<formulario.length; i++) {
-                if(formulario[i].type =='text') {
-                               if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
-                               alert (formulario[i].name.charAt(0).toUpperCase()+ formulario[i].name.slice(1)+' no puede estar vacío o contener sólo espacios en blanco');
-                               todoCorrecto=false;
-                               }
-                }
-                }
-if (todoCorrecto ==true) {formulario.submit();}
-}
-</script>
 </head>
 
 <body>
@@ -69,28 +45,36 @@ if (todoCorrecto ==true) {formulario.submit();}
                     <div class="columna2">
 
                         <div id="textoCuerpo">
-                        	<span id="t1">TALLER DE APRENDIZAJE A TRAVÉS DEL JUEGO<span/>
-							<br/><br/>
-							<table class="mce-item-table" border="0" cellspacing="0" cellpadding="3">
-     						<tbody>
+                        	<p id="t1">Taller de aprendizaje a través del juego<p/>
+							<table class="tablaHoras" border="0" cellspacing="0" cellpadding="3">
         						<tr>
-            						<td><strong>HORARIO</strong></td>
-            						<td><strong>TODOS LOS VIERNES</strong></td>
+            						<td><strong>Edad</strong></td>
+            						<td><strong>&nbsp;&nbsp;&nbsp;Todos los viernes</strong></td>
         						</tr>
         						<tr>
 							 		<td colspan="1" rowspan="1">4-6 años</td>
-            						<td colspan="1" rowspan="1">18:30 h A 19:30 h</td>
+            						<td colspan="1" rowspan="1">&nbsp;&nbsp;&nbsp;18:30 h A 19:30 h</td>
         						</tr>
         						<tr>
             						<td colspan="1" rowspan="1">7-11 años</td>
-            						<td colspan="1" rowspan="1">18:30 h a 20:30 h</td>
+            						<td colspan="1" rowspan="1">&nbsp;&nbsp;&nbsp;18:30 h a 20:30 h</td>
         						</tr>
 								<tr>
            							 <td>12-18 años </td>
-            						 <td>18:30 a 21:30 h </td>
+            						 <td>&nbsp;&nbsp;&nbsp;18:30 a 21:30 h </td>
         						</tr>
-    						</tbody>
-							</table>         	
+							</table>     
+							<br /><p id="t2">Cineforum<p/>
+							<table class="tablaCine" border="0" cellspacing="0" cellpadding="3">   
+								<tr>
+            						<td><strong>Edad</strong></td>
+            						<td><strong>&nbsp;&nbsp;&nbsp;Cada dos sábados</strong></td>
+        						</tr>
+								<tr>
+							 		<td colspan="1" rowspan="1">Todo el público</td>
+            						<td colspan="1" rowspan="1">&nbsp;&nbsp;&nbsp;De 18:30 a 20:30 aprox.(Depende de la película)</td>
+        						</tr>
+							</table> 	
                         </div> <!--textoCuerpo -->
                     </div>
 
