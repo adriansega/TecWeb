@@ -28,7 +28,7 @@ $id=0;
                         <?php echo mysqli_result($resultado,$id++); ?>
 </a></div>
                             <div class="elementoMenuSecundario"> <a href="estatutos.html" alt="Mision"><img src="imagenes/MISION.gif" alt="Mision"/>
-                        <?php echo mysqli_result($resultado,$id++); ?>
+                        <?php echo utf8_encode(mysqli_result($resultado,$id++)); ?>
 </a></div>
                         </div>
 
