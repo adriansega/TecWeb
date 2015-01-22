@@ -1,9 +1,9 @@
-﻿<?php
+<?php
 
 $hotsdb = "localhost";
 $basededatos = "afim21";
-$usuariodb = "admin";
-$clavedb= "1234";
+$usuariodb = "root";
+$clavedb= "root";
 
 
 $mysqli=new mysqli($hotsdb,$usuariodb,$clavedb,$basededatos); //servidor, usuario de base de datos, contraseña del usuario, nombre de base de datos
