@@ -12,17 +12,16 @@
    
          <div id="textoCuerpo">
                 <!--Formulario de inserción-->
-               	<h3>Añadir monitor</h3>
+               	<h3>Añadir Juego</h3>
                	<br/>
-               	<form name="monitores" method="post" action="php/anadirMonitor.php" class="monitores" enctype="multipart/form-data">	                                
-								Nombre: * <input type="text" name="nombreMonitor" size="25" maxlength="50"><br><br>
-								Apellidos: * <input type="text" name="apellidosMonitor" size="30" maxlength="100"> <br><br>
+               	<form name="Juego" method="post" action="php/anadirJuego.php" class="monitores" enctype="multipart/form-data">	                                
+								Nombre: * <input type="text" name="nombrejuego" size="25" maxlength="50"><br><br>
+								Unidades: * <input type="int" name="unidades" size="25" maxlength="50"><br><br>
+								imagen(url): * <input type="text" name="imagen" size="25" maxlength="150"><br><br>
 								Descripción: * <br>
                 <textarea cols="41" rows="4" name="descripcion" onFocus='this.value=""'>Escriba una breve descripción...</textarea> <br><br>
-								Foto: 
-                <input type="file" name="imagenMonitor" id="imagenMonitor"/>
-                <br/><br/>			
-								<input type="submit" value="Añadir monitor" name="anadir">
+								
+								<input type="submit" value="Añadir Juego" name="anadir">
 								<input type="Reset" value="Borrar formulario" name="borrar">
                 </form>
 								<br/><br/>
