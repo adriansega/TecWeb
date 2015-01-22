@@ -67,6 +67,6 @@ background:#ffffff;
 
     <div><label>Usuario</label><input name="login" type="text" id="login" ></div>
     <div><label>Contrasena</label><input name="password" type="password" id="password"></div>
-    <div><input name="login" type="submit" value="Entrar"></div>
+    <div><input name="inicio" type="submit" value="Entrar"></div>
 
 </form>
