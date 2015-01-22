@@ -79,8 +79,8 @@ if (todoCorrecto ==true) {formulario.submit();}
 								<p style="font-weight: bold;">¡Cineforum gratuito!</p>
                         		<br/><br />
                         		<form name="formularioContacto" class="formularioTipo1" method="get" action="nuriaguzmans@gmail.com" enctyp"text/plain"					                                >
-								Nombre de niño/a * <input type="text" name="nombre" size="25" maxlength="50"><br><br>
-								Apellidos * <input type="text" name="apellidos" size="35" maxlength="100">
+								<label for="Nombre">Nombre de niño/a * </label> <input type="text" name="nombre" size="15" maxlength="50"><br><br>					
+								<label for="Apellidos"> Apellidos * </label> <input type="text" name="apellidos" size="25" maxlength="100">
 								<br/><br/>
 								<label for="edad">Edad *</label> 
 								<select id="edad" name="edad">
@@ -101,18 +101,19 @@ if (todoCorrecto ==true) {formulario.submit();}
 								<option value="17">17</option>
 								<option value="18">18</option>
 								</select>
-								Nombre del tutor/a legal * <input type="text" name="tutor" size="15" maxlength="50">
 								<br/><br/>
-								Apellidos * <input type="text" name="apellidosTutor" size="15" maxlength="50">
+								<label for="nombreTutor">Nombre del tutor/a legal *</label> <input type="text" name="tutor" size="15" maxlength="50">
 								<br/><br/>
-								Correo electrónico <input type="text" value="@" name="correo" size="40" maxlength="100">
+								<label for="apellidosTutor">Apellidos *</label> <input type="text" name="apellidosTutor" size="15" maxlength="50">
 								<br/><br/>
-								Teléfono *: <input type="text" name="poblacion" size="9" maxlength="50">
+								<label for="Correo">Correo electrónico: </label><input type="text" value="@" name="correo" size="30" maxlength="100">
 								<br/><br/>
-								Actividad * <input type="radio" name="taller" value="tallerJuegos">Taller de aprendizaje a través del juego
+								<label for="Telefono">Teléfono *:</label> <input type="text" name="poblacion" size="9" maxlength="50">
+								<br/><br/>
+								<label for="Actividad">Actividad *</label> <input type="radio" name="taller" value="tallerJuegos">Taller de aprendizaje                                a través del juego
 								<input type="radio" name="cine" value="cineForum">Cineforum
 								<br><br>
-								Mensaje:<br>
+								<label for="Mensaje">Mensaje:</label><br>
 								<textarea cols="75" rows="8" name="opinion">Escriba aquí su mensaje...</textarea>
 								</select>
 								<br/><br/>			
