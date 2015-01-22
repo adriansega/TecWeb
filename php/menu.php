@@ -25,29 +25,30 @@ if (!$resultado) {
 $id=0;
 ?>
 
+
                     <div class="elementoMenuArriba">
                         <a href="afim21.html"><img src="imagenes/inicio.png" title="INICIO" alt="INICIO">
-                        <?php echo mysqli_result($resultado,$id++); ?></a>                            
+                        <div><?php echo mysqli_result($resultado,$id++); ?></div></a>                            
                     </div>                                    
 
                     <div class="elementoMenuArriba">
                         <a href="actividades.html"><img src="imagenes/actividades.png" title="Actividades" alt="Actividades"/>
-                        <?php echo mysqli_result($resultado,$id++); ?></a>                            
+                        <div><?php echo mysqli_result($resultado,$id++); ?></div></a>                            
                     </div>                                     
 
                     <div class="elementoMenuArriba">
                         <a href="horario.html"><img src="imagenes/horario.png" title="Horario" alt="Horario"/>
-                        <?php echo mysqli_result($resultado,$id++); ?></a>                            
+                        <div><?php echo mysqli_result($resultado,$id++); ?></div></a>                            
                     </div>                                                
 
                     <div class="elementoMenuArriba">
                         <a href="juegos.html"><img src="imagenes/dice.png" title="Juegos" alt="Juegos"/>
-                        <?php echo mysqli_result($resultado,$id++); ?></a>                            
+                        <div><?php echo mysqli_result($resultado,$id++); ?></div></a>                            
                     </div>                                     
 
                     <div class="elementoMenuArriba">
                         <a href="inscripcion.html"><img src="imagenes/noticias.png" title="Contáctanos" alt="Contáctanos"/>
-                        <?php echo utf8_encode(mysqli_result($resultado,$id++)); ?></a>                            
+                        <div><?php echo utf8_encode(mysqli_result($resultado,$id++)); ?></div></a>                            
                     </div>                                     
 <?php 
 mysqli_free_result($resultado);

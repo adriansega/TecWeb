@@ -45,9 +45,6 @@
     width:6%; /* 100/6 elementos = 18 ?????¿¿ */
     text-align:center;
 }
-.elementoMenuArriba a{
-    display:block;
-}
 
 .elementoMenuArriba img{
     height: 45px;
