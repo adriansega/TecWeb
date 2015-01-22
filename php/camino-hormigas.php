@@ -13,7 +13,7 @@ if(!isset($_SESSION['idioma']))
 switch ($pagina) {
 case 'quienes':
 case 'equipo':
-case 'estatutos':
+case 'mision':
     $sql = "select nombre from menus where idioma='$_SESSION[idioma]' and tipo=1 order by id";
     break;
 default:
@@ -22,7 +22,7 @@ default:
 }
 if ($pagina== 'quienes') $id=0;
 if ($pagina== 'equipo') $id=1;
-if ($pagina== 'estatutos') $id=2;
+if ($pagina== 'mision') $id=2;
 
 $resultado = mysqli_query($con,$sql);
 if (!$resultado) {
