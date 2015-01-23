@@ -8,7 +8,7 @@
 			
 			$nombre=$_POST['nombreMonitor'];
 			$apellidos=$_POST['apellidosMonitor'];
-			$descripcion=$_POST['descripcion'];
+			$descripcion=$_POST['descripcionMonitor'];
 			/*$foto=$_POST['foto'];*/
 			$archivo=$_FILES['imagenMonitor']['tmp_name'];
 			$destino= "fotos/". $_FILES['imagenMonitor']['name'];
@@ -29,7 +29,7 @@
 					echo "<br>";	
 				}else{
 					//Añade la informacion a la tabla
-					$sql = "INSERT INTO monitores (idMonitor,nombreMonitor,apellidosMonitor,descripcion,imagenMonitor) VALUES ('','$nombre','$apellidos','$descripcion', '$destino')";
+					$sql = "INSERT `monitores`(`idMonitor`, `nombreMonitor`, `apellidosMonitor`, `descripcionMonitor`, `imagenMonitor`) VALUES ('','$nombre','$apellidos','$descripcion', '$destino')";
 					
 					mysqli_query($con, $sql);
 
@@ -40,5 +40,5 @@
 			}
 		}
 		include_once "cerrar_conexion.php";	
-		echo "<a href='http://localhost/TecWeb/php/monitores.php'>VOLVER</a>";
+		echo "<a href='/Pagina_AFIM/equipo.html'>VOLVER</a>";
 ?>

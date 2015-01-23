@@ -1,7 +1,7 @@
 <?php
 	require('conexion.php');
 	
-	$query="SELECT idMonitor, nombreMonitor, apellidosMonitor, descripcion, imagenMonitor FROM monitores";
+	$query="SELECT idMonitor, nombreMonitor, apellidosMonitor, descripcionMonitor, imagenMonitor FROM monitores";
 	
 	$resultado=$mysqli->query($query);
 	
@@ -17,7 +17,7 @@
 		
 		<div style="text-align:center;">
 		<table border=0 width=80% style="margin: 0 auto;">
-		<td><b><a href='http://localhost/TecWeb/anadirMonitor.html'>Nuevo monitor</a></b></td>
+		<td><b><a href='http://localhost/Pagina_AFIM/anadirMonitor.html'>Nuevo monitor</a></b></td>
 		<p></p>
 		
 		<table border=1 width="80%" style="margin: 0 auto;">
@@ -39,7 +39,7 @@
 								<?php echo $row['apellidosMonitor'];?>
 							</td>
 							<td>
-								<?php echo $row['descripcion'];?>
+								<?php echo $row['descripcionMonitor'];?>
 							</td>
 							<td>
 								<?php echo $row['imagenMonitor'];?>

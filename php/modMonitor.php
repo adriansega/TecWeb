@@ -2,7 +2,7 @@
   require('conexion.php');
   
   $idMonitor=$_GET['idMonitor'];
-  $query="SELECT idMonitor, nombreMonitor, apellidosMonitor, descripcion, imagenMonitor FROM monitores WHERE idMonitor='$idMonitor'";
+  $query="SELECT idMonitor, nombreMonitor, apellidosMonitor, descripcionMonitor, imagenMonitor FROM monitores WHERE idMonitor='$idMonitor'";
   
   $resultado=$mysqli->query($query);
 
@@ -13,7 +13,7 @@
 <head>
 <title>Modificar monitores</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="text/css" rel="stylesheet" media="all" href="http://localhost/TecWeb/css/monitores.css">
+<link type="text/css" rel="stylesheet" media="all" href="http://localhost/Pagina_AFIM/css/monitores.css">
 </head>
 
 <body style="background-color:#FFFFFF">
@@ -24,12 +24,12 @@
                	<h3>Modificar monitor</h3>
                	<br/>
                 <?php while($row=$resultado->fetch_assoc()){ ?>
-               	<form name="monitores" method="post" action="http://localhost/TecWeb/php/modificarMonitor.php" class="monitores" enctype="multipart/form-data">	 
+               	<form name="monitores" method="post" action="http://localhost/Pagina_AFIM/php/modificarMonitor.php" class="monitores" enctype="multipart/form-data">	 
                 <input type="hidden" name="idMonitor" value="<?php echo $row['idMonitor'];?>">                               
 								Nombre: * <input type="text" name="nombreMonitor" size="25" maxlength="50" value="<?php echo $row['nombreMonitor'];?>"><br><br>
 								Apellidos: * <input type="text" name="apellidosMonitor" size="35" maxlength="100" value="<?php echo $row['apellidosMonitor'];?>"> <br><br>
 								Descripción: *<br>
-                <textarea cols="41" rows="4" name="descripcion" maxlength="512"><?php echo $row['descripcion'];?></textarea> <br><br>
+                <textarea cols="41" rows="4" name="descripcion" maxlength="512"><?php echo $row['descripcionMonitor'];?></textarea> <br><br>
 								Foto: 
                 <input type="file" name="imagenMonitor" id="imagenMonitor" value="<?php echo $row['imagenMonitor'];?>"/>
                 <!-- <input type="submit" value="Cargar imagen" /> -->
