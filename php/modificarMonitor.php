@@ -17,9 +17,8 @@
       
       
        //$sql = "UPDATE monitores SET nombreMonitor='$nombre', apellidosMonitor='$apellidos', descripcion='$descripcion', imagenMonitor='$destino' WHERE idMonitor='4'";
-       $sql = "UPDATE monitores SET nombreMonitor='$nombre', apellidosMonitor='$apellidos', descripcion='$descripcion', imagenMonitor='$destino' WHERE idMonitor='$idMonitor'";
-       mysqli_query($con, $sql);
-        
+       $sql = "UPDATE `monitores` SET `idMonitor`=`$idMonitor`,`nombreMonitor`=`$nombre`,`apellidosMonitor`=`$apellidos`,`descripcionMonitor`=`$descripcion` WHERE 'idMonitor'='$idMonitor'";
+       mysqli_query($con, $sql);      
        echo 'Monitor modificado correctamente';
        echo "<br>";
               

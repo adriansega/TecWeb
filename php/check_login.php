@@ -1,6 +1,6 @@
 <?php
 include_once "conexion.php";
-	
+	session_start();
 	//recuperar balores
 	$login=$_POST['login']; 
 	$password=$_POST['password']; 
@@ -11,9 +11,9 @@ include_once "conexion.php";
 	$count= mysqli_num_rows($result);
 	//interpretar resultado
 	if($count==1){	
-	session_start();
+	$_SESSION['usuario']=$login;  
 	echo "Su usario es correcto.";
-	echo "<a href='/Pagina_AFIM/administracion.html'>Continuar</a>";
+	echo "<a href='/TecWeb/afim21.html'>Continuar</a>";
 	}else{
 	echo "Su usuario es incorrecto, intente nuevamente. ";
 	echo "<a href='http://localhost/TecWeb/php/inicio_sesion.php'>VOLVER</a>";

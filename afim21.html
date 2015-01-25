@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
-<?php session_start();?>
 <head>
 <title>Inicio - Página web de afim21</title>
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -22,8 +21,8 @@
 <!-- Importamos nuestra hoja de estilos CSS -->
 <link rel="stylesheet" href="css/estilos_slider.css" />
 </head>
-
 <body >
+<?php include_once "./php/menuAdministrador.php"; ?>
 <div id="page-wrapper">
 <div id="slider">
         <ul class="bjqs">
@@ -86,7 +85,13 @@
     <div id="footer">
         <span id="contacto">Contacto con AFIM21 Almeria: Tlf 678468545 | nuriaguzmans@gmail.com&nbsp; | 
            <a title="Aviso Legal" href="legal.html">Aviso Legal</a> | <a title="Mapa Web" href="sitemap.html">Mapa           Web</a> 
-		   | <a title="Mapa Web" href="php/inicio_sesion.php">Administracion </a></span>
+		   | <?php 
+				if(isset($_SESSION['usuario'])){?>
+					<a title="Mapa Web" href="php/cerrar_sesion.php">Cerrar Sesión </a></span>
+			<?php	
+			}else{?>
+					<a title="Mapa Web" href="php/inicio_sesion.php">Administracion </a></span>
+			<?php }?>	
     </div> <!-- /#footer -->
 </div> <!-- /#page-wrapper -->
 
