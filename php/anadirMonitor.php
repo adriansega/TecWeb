@@ -40,5 +40,5 @@
 			}
 		}
 		include_once "cerrar_conexion.php";	
-		echo "<a href='/Pagina_AFIM/equipo.html'>VOLVER</a>";
+		echo "<a href='/TecWeb/equipo.html'>VOLVER</a>";
 ?>

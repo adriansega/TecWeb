@@ -16,6 +16,6 @@ include_once "conexion.php";
 	echo "<a href='/Pagina_AFIM/administracion.html'>Continuar</a>";
 	}else{
 	echo "Su usuario es incorrecto, intente nuevamente. ";
-	echo "<a href='http://localhost/Pagina_AFIM/php/inicio_sesion.php'>VOLVER</a>";
+	echo "<a href='http://localhost/TecWeb/php/inicio_sesion.php'>VOLVER</a>";
 	}
 ?>

@@ -24,5 +24,5 @@
 			
 		}
 		include_once "cerrar_conexion.php";	
-		echo "<a href='/Pagina_AFIM/juegos.html'>VOLVER</a>";
+		echo "<a href='/TecWeb/juegos.html'>VOLVER</a>";
 ?>
