@@ -15,27 +15,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="css/cajas.css">
 <link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css">
 <link type="text/css" rel="stylesheet" media="all" href="css/principal.css">
-<script type="text/javascript">
-window.onload = function () {
-document.formularioContacto.nombre.focus();
-document.formularioContacto.addEventListener('submit', validarFormulario);
-}
- 
-function validarFormulario(evObject) {
-evObject.preventDefault();
-var todoCorrecto = true;
-var formulario = document.formularioContacto;
-for (var i=0; i<formulario.length; i++) {
-                if(formulario[i].type =='text') {
-                               if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
-                               alert (formulario[i].name.charAt(0).toUpperCase()+ formulario[i].name.slice(1)+' no puede estar vacío o contener sólo espacios en blanco');
-                               todoCorrecto=false;
-                               }
-                }
-                }
-if (todoCorrecto ==true) {formulario.submit();}
-}
-</script>
+
 </head>
 
 <body>
@@ -61,9 +41,6 @@ if (todoCorrecto ==true) {formulario.submit();}
                 <div id="content-area">
                     <div class="columna1">
                         <?php include_once "./php/menu-lateral.php"; ?>
-						<p id="textoBlog"> Visítanos en:<br /></p>
-						<div id="logoBlog"><a href="http://afim21.blogspot.com.es/" target="_blank"><img src="imagenes/blogspot.gif" alt="blog"/></a>	                        </div> <!-- #logoBlog -->			
-						<div id="logoFacebook"><a href="https://www.facebook.com/deviriberia/posts/528134283974532" target="_blank"><img src=   	  	                        "imagenes/logoFacebook.png" alt="blog"/></a></div></div> <!-- #logoFacebook -->
                     </div>
                     <div class="columna2">
 

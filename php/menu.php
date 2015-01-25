@@ -1,5 +1,5 @@
 <?php
- 		 							
+header('Content-Type: text/html; charset=UTF-8');  							
 include_once "conexion.php";
 function mysqli_result($res, $row, $field=0) {
         $res->data_seek($row);
