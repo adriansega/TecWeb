@@ -8,9 +8,9 @@
 		<div id="menu">
         <ul>
             <li><a href="index.php">Juegos</a></li>
-            <li><a href="./php/monitores.php">Monitores</a></li>
-            <li><a href="https://www.dropbox.com/home" target="_blank">Dropbox</a></li>
-            <li><a href="./php/cerrar_sesion.php">Salir</a></li>
+            <li><a href="php/monitores.php">Monitores</a></li>
+            <li><a href="comentarios.php">Dropbox</a></li>
+            <li><a href="php/cerrar_sesion.php">Salir</a></li>
         </ul>
     </div>
 	<?php	

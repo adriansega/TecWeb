@@ -32,9 +32,8 @@ $id=0;
 </a></div>
                         </div>
 						<p id="textoBlog"> <?php echo utf8_encode('Visítanos en:')?><br /><br /></p>
-						<table>
-						<tr><td><div id="logoBlog"><a href="http://afim21.blogspot.com.es/" target="_blank"><img src="imagenes/blogspot.gif" alt="blog"/></a>	                        </div></td></tr> <!-- #logoBlog -->			
-						<tr><td><div id="logoFacebook"><a href="https://www.facebook.com/Afim21" target="_blank"><img src=   	  	                        "imagenes/logoFacebook.png" alt="blog"/></a></div></td></tr></div></table> <!-- #logoFacebook -->
+						<div id="logoBlog"><a href="http://afim21.blogspot.com.es/" target="_blank"><img src="imagenes/blogspot.gif" alt="blog"/></a>	                        </div> <!-- #logoBlog -->			
+						<div id="logoFacebook"><a href="https://www.facebook.com/Afim21" target="_blank"><img src=   	  	                        "imagenes/logoFacebook.png" alt="blog"/></a></div></div> <!-- #logoFacebook -->
 
 <?php 
 mysqli_free_result($resultado);
