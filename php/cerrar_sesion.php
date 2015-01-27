@@ -4,6 +4,6 @@ session_start();
 if(isset($_SESSION['usuario']))
     unset($_SESSION['usuario']);
 
-header("Location: http://localhost/TecWeb/afim21.html");
+header("Location: http://localhost/TecWeb/");
 
 ?>

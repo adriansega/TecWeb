@@ -123,6 +123,7 @@
 }
 
 #logoBlog a{
+	float:left;
 	text-decoration: none;
     color:#0099CC;
     display:block!important;
@@ -147,6 +148,7 @@
 }
 
 #logoFacebook a{
+	float:left;
 	text-decoration: none;
     color:#0099CC;
     display:block!important;

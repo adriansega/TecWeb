@@ -13,9 +13,9 @@ include_once "conexion.php";
 	if($count==1){	
 	$_SESSION['usuario']=$login;  
 	echo "Su usario es correcto.";
-	echo "<a href='/TecWeb/afim21.html'>Continuar</a>";
+	echo "<a href=' http://localhost/TecWeb/'>Continuar</a>";
 	}else{
 	echo "Su usuario es incorrecto, intente nuevamente. ";
-	echo "<a href='http://localhost/TecWeb/php/inicio_sesion.php'>VOLVER</a>";
+	echo "<a href='../php/inicio_sesion.php'>VOLVER</a>";
 	}
 ?>
