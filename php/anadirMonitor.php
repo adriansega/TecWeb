@@ -40,5 +40,5 @@
 			}
 		}
 		include_once "cerrar_conexion.php";	
-		echo "<a href='/TecWeb/equipo.html'>VOLVER</a>";
+		echo "<a href='../equipo.html'>VOLVER</a>";
 ?>
