@@ -17,7 +17,7 @@
 		
 		<div style="text-align:center;">
 		<table border=0 width=80% style="margin: 0 auto;">
-		<td><b><a href='http://localhost/Pagina_AFIM/anadirMonitor.html'>Nuevo monitor</a></b></td>
+		<td><b><a href='../anadirMonitor.html'>Nuevo monitor</a></b></td>
 		<p></p>
 		
 		<table border=1 width="80%" style="margin: 0 auto;">
@@ -45,10 +45,10 @@
 								<?php echo $row['imagenMonitor'];?>
 							</td>
 							<td>
-								<a href="modMonitor.php?idMonitor=<?php echo $row['idMonitor'];?>">Modificar</a>  <!--Pasa el idMonitor a modMonitor.php mediante GET-->
+								<a href="./modMonitor.php?idMonitor=<?php echo $row['idMonitor'];?>">Modificar</a>  <!--Pasa el idMonitor a modMonitor.php mediante GET-->
 							</td>
 							<td>
-								<a href="eliminarMonitor.php?idMonitor=<?php echo $row['idMonitor'];?>">Eliminar</a>
+								<a href="./eliminarMonitor.php?idMonitor=<?php echo $row['idMonitor'];?>">Eliminar</a>
 							</td>
 						</tr>
 					<?php } ?>

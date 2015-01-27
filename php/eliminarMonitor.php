@@ -26,9 +26,6 @@
 					$sql = "DELETE FROM monitores WHERE idMonitor='$idMonitor'";
 					mysqli_query($con, $sql);
 
-					echo 'Monitor eliminado correctamente';
-					echo "<br>";
-
 				/*
 				}else{
 					echo 'Este monitor no existe en la BD';
@@ -37,5 +34,5 @@
 			}
 		}*/	
 		include_once "cerrar_conexion.php";
-		echo "<a href='http://localhost/TecWeb/php/monitores.php'>VOLVER</a>";;
+		header("Location: monitores.php");
 ?>
