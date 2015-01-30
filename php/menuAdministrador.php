@@ -1,27 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head></head>
-<body>
 <?php 
-	session_start();
-	if(isset($_SESSION['usuario'])){?>
-		<div id="menu">
+$ruta ="http://$_SERVER[HTTP_HOST]/";
+if(isset($_SESSION['usuario'])){?>
+    <div id="menu">
         <ul>
-            <li><a href="index.php">Juegos</a></li>
-            <li><a href="php/monitores.php">Monitores</a></li>
-            <li><a href="comentarios.php">Dropbox</a></li>
-            <li><a href="php/cerrar_sesion.php">Salir</a></li>
+         <?php
+         $uri=$_SERVER['REQUEST_URI'];
+         if (substr($uri,0,5)=="/php/") 
+             echo '<li><a href="'.$ruta.'">Ir a inicio</a></li>';
+         ?>
+        <li><a href="<?php echo $ruta;?>juego.php">Juegos</a></li>
+        <li><a href="<?php echo $ruta;?>php/monitores.php">Monitores</a></li>
+        <li><a href="<?php echo $ruta;?>comentarios.php">Dropbox</a></li>
+        <li><a href="<?php echo $ruta;?>php/cerrar_sesion.php">Salir</a></li>
         </ul>
     </div>
-	<?php	
-	}?>	
-</body>
-</html>
+<?php	
+}?>	
 
 <style type="text/css">
 a {
     text-decoration:none;
-	text-align:center;
+  text-align:center;
 }
 #menu {
     background: #444444;
@@ -38,11 +38,11 @@ a {
     margin:auto;
 }
 #menu ul li {
-	font-size:14px;
-	display:inline;
+  font-size:14px;
+  display:inline;
     line-height: 40px;
     margin-right: 40px;
- 
+
 }
 #menu ul li:hover {
     border-bottom: 3px solid #FF7400;
@@ -51,7 +51,7 @@ a {
      -o-transition:border-bottom 0.3s linear;
      transition:border-bottom 0.3s linear;
 }
- 
+
 #menu ul li a {
     color: #eee;
 }

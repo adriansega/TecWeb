@@ -8,3 +8,7 @@
 *Areglar el formulario de inscripción
 *Incluir el cif en el aviso legal
 
+*Comprobar en anadirMonitor.html que los campos no esten vacios
+*Embellecer inicio_sesion.php
+*Eliminar los ficheros que no se usen...
+*En la parte AJAx cerrar colocarle una cruz en vez de un boton

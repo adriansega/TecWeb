@@ -1,10 +1,11 @@
+<?php session_start();?>
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" dir="ltr" lang="es">
 
 <head>
 <title>Añadir persona</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="text/css" rel="stylesheet" media="all" href="css/monitores.css">
+<link type="text/css" rel="stylesheet" media="all" href="../css/monitores.css">
 </head>
 
 <body style="background-color:#FFFFFF">
@@ -12,9 +13,8 @@
    
          <div id="textoCuerpo">
                 <!--Formulario de inserción-->
+               	<form name="monitores" method="post" action="anadirMonitor.php" class="monitores" enctype="multipart/form-data">	                                
                	<h3>Añadir monitor</h3>
-               	<br/>
-               	<form name="monitores" method="post" action="php/anadirMonitor.php" class="monitores" enctype="multipart/form-data">	                                
 								Nombre: * <input type="text" name="nombreMonitor" size="25" maxlength="50"><br><br>
 								Apellidos: * <input type="text" name="apellidosMonitor" size="30" maxlength="100"> <br><br>
 								Descripción: * <br>
@@ -24,6 +24,7 @@
                 <br/><br/>			
 								<input type="submit" value="Añadir monitor" name="anadir">
 								<input type="Reset" value="Borrar formulario" name="borrar">
+                <input type="button" value="Cierra" onclick="javascript:cierra()"> 
                 </form>
 								<br/><br/>
         </div> <!--textoCuerpo -->

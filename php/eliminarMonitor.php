@@ -1,38 +1,19 @@
 <?php
 
-		session_start();
-		include_once "conexion.php";
+session_start();
+include_once "conexion.php";
 
-		
-		/*if(isset($_POST['añadir'])){
-			if($_POST['nombreMonitor']=='' or $_POST['apellidosMonitor']==''){
-				echo 'Por favor rellene los campos obligatorios *';
-			}
-			else
-			{
-				//comprobamos que el nombre y apellidos estan/no estan en la BD
-				$sql = "SELECT idMonitor FROM monitores WHERE nombreMonitor ='".$_POST['nombreMonitor']."' AND apellidos ='".$_POST['apellidosMonitor']"'";
-				$rec = mysql_query($sql);
-				$verificar_usuario = 0;
-				//Si esta
-				if(mysql_num_fields($rec) > 0) {
-					//obtenemos los valores de personas*/
-					$idMonitor=$_GET['idMonitor'];
-					/*$nombre=$_POST['nombreMonitor'];
-					$apellidos=$_POST['apellidosMonitor'];
-					$descripcion=$_POST['descripcion'];
-					$imagen=$_POST['imagenMonitor'];*/
-					//Añade la informacion a la tabla
-					$sql = "DELETE FROM monitores WHERE idMonitor='$idMonitor'";
-					mysqli_query($con, $sql);
+$idMonitor=$_GET['idMonitor'];
+if(isset($idMonitor)){
+    $sql = "SELECT idMonitor FROM monitores WHERE idMonitor='$idMonitor'";
+    $rec = mysqli_query($con,$sql);
+    if(mysqli_num_fields($rec) == 1) {
+        $sql = "DELETE FROM monitores WHERE idMonitor='$idMonitor'";
+        mysqli_query($con, $sql);
+        echo "Monitor eliminado correctamente";
+    }
+}else echo "Este monitor no existe en la BD";
 
-				/*
-				}else{
-					echo 'Este monitor no existe en la BD';
-				}
-
-			}
-		}*/	
-		include_once "cerrar_conexion.php";
-		header("Location: monitores.php");
+include_once "cerrar_conexion.php";
+//header("Location: monitores.php");
 ?>

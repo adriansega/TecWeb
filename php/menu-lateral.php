@@ -1,5 +1,4 @@
 <?php
-
 include_once "conexion.php";
 
 if(isset($_GET['l'])){
@@ -20,20 +19,21 @@ if (!$resultado) {
 $id=0;
 ?>
 
-                        <div id="menuSecundario">
-                            <div class="elementoMenuSecundario"> <a href="quienes.html" alt="Quienes Somos"><img src="imagenes/social.png" alt="Quienes Somos"/>
-                        <?php echo mysqli_result($resultado,$id++); ?>
- </a></div>
-                            <div class="elementoMenuSecundario"> <a href="equipo.html" alt="Equipo"><img src="imagenes/datos_0.gif" alt="Equipo"/>
-                        <?php echo mysqli_result($resultado,$id++); ?>
+    <div id="menuSecundario">
+        <div class="elementoMenuSecundario"> <a href="quienes.html" alt="Quienes Somos"><img src="imagenes/social.png" alt="Quienes Somos"/>
+    <?php echo mysqli_result($resultado,$id++); ?>
 </a></div>
-                            <div class="elementoMenuSecundario"> <a href="mision.html" alt="Mision"><img src="imagenes/MISION.gif" alt="Mision"/>
-                        <?php echo utf8_encode(mysqli_result($resultado,$id++)); ?>
+        <div class="elementoMenuSecundario"> <a href="equipo.html" alt="Equipo"><img src="imagenes/datos_0.gif" alt="Equipo"/>
+    <?php echo mysqli_result($resultado,$id++); ?>
 </a></div>
-                        </div>
-						<p id="textoBlog"> <?php echo utf8_encode('Visítanos en:')?><br /><br /></p>
-						<div id="logoBlog"><a href="http://afim21.blogspot.com.es/" target="_blank"><img src="imagenes/blogspot.gif" alt="blog"/></a>	                        </div> <!-- #logoBlog -->			
-						<div id="logoFacebook"><a href="https://www.facebook.com/Afim21" target="_blank"><img src=   	  	                        "imagenes/logoFacebook.png" alt="blog"/></a></div></div> <!-- #logoFacebook -->
+        <div class="elementoMenuSecundario"> <a href="mision.html" alt="Mision"><img src="imagenes/MISION.gif" alt="Mision"/>
+    <?php echo utf8_encode(mysqli_result($resultado,$id++)); ?>
+</a></div>
+    </div>
+<p id="textoBlog"> <?php echo utf8_encode('Visítanos en:')?><br /><br /></p>
+<div id="logoBlog"><a href="http://afim21.blogspot.com.es/" target="_blank"><img src="imagenes/blogspot.gif" alt="blog"/></a></div> 
+<div id="logoFacebook"><a href="https://www.facebook.com/Afim21" target="_blank"><img src=   	  	                        "imagenes/logoFacebook.png" alt="blog"/></a></div>
+</div> 
 
 <?php 
 mysqli_free_result($resultado);
