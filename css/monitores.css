@@ -31,6 +31,17 @@ background:#ffffff;
     font-weight: bold;
     padding: 4px 20px;
 
+}
+
+#centrado{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
 
 
 /*}.error{
@@ -40,4 +51,3 @@ background:#ffffff;
     margin: 10px;
     text-align: center;
 */
-}
