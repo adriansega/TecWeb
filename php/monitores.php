@@ -24,13 +24,13 @@ $resultado=$mysqli->query($query);
      <script language="javascript" type="text/javascript">
      <!--
 
-    function accionMonitor(url,id,accion){
-        $.ajax({ url: url, data: { idMonitor: id, accion:accion },
+    function formMonitor(id,accion){
+        $.ajax({ url: "formMonitor.php", data: { idMonitor: id, accion:accion },
             type: "POST",
             dataType : "text",
             success: function( text ) {
                 $("#centrado").html( text );
-                $("#centrado").toggle();
+                cierra();
             },
             error: function( xhr, status, errorThrown ) {
                alert( "Error. Ocurrió algo inesperado: " + errorThrown );
@@ -38,13 +38,58 @@ $resultado=$mysqli->query($query);
         });
     }
 
-    function anadir(){ accionMonitor("formMonitor.php",0,"insertar"); }
+    function anadir(){ formMonitor(0,"insertar"); }
 
-    function modificar(id){ accionMonitor("formMonitor.php",id,"modificar"); }
+    function modificar(id){ formMonitor(id,"modificar"); }
 
-    function borrar(id){ if (confirm("¿Esta seguro de querer borrar al monitor?")) accionMonitor("accionesMonitor.php",id,"borrar"); }
+    function borrar(id){ 
+    if (confirm("¿Esta seguro de querer borrar al monitor?")) {
+        $.ajax({ url: "accionesMonitor.php", data: { 
+                    idMonitor: id, 
+                    accion:"borrar",
+                },
+                type: "POST",
+                dataType : "text",
+                success: function( resultado) { muestra(resultado,id,"borrar"); },
+                error: function( xhr, status, errorThrown ) {
+                   alert( "Error. Ocurrió algo inesperado: " + errorThrown );
+                }, 
+            });
+        }
+    }
+
+    function res(nombre,apellidos, descripcion,imagen,accion,id){
+        $.ajax({ url: "accionesMonitor.php", data: { 
+                idMonitor: id, 
+                nombreMonitor: nombre, 
+                apellidosMonitor: apellidos, 
+                descripcionMonitor: descripcion, 
+                imagenMonitor: imagen, 
+                accion:accion,
+            },
+            //Para la imagen...
+            // cache: false,
+            // contentType: false,
+            // processData: false,
+            // mimeType: "multipart/form-data",
+            type: "POST",
+            dataType : "text",
+            success: function(resultado) { muestra(resultado,id,accion); },
+            error: function( xhr, status, errorThrown ) {
+               alert( "Error. Ocurrió algo inesperado: " + errorThrown );
+            }, 
+        });
+    }
 
     function cierra(){ $("#centrado").toggle(); }
+
+    function muestra(resultado,id,accion){
+        alert(resultado);
+        if(accion!="borrar") { location.reload(); }
+        else{ $("#fila"+id).remove(); }
+        cierra();
+     }
+
 
     // -->
 </script> 
@@ -62,7 +107,7 @@ $resultado=$mysqli->query($query);
         </tr>
         <tbody>
         <?php while($row=$resultado->fetch_assoc()){ ?>
-        <tr>
+        <tr id="fila<?php echo $row['idMonitor'];?>">
             <td>
                 <?php echo $row['nombreMonitor'];?>
             </td>

@@ -50,7 +50,8 @@ if ($accion=="insertar") {
     <?php } ?>
     <input type="file" name="imagenMonitor" id="imagenMonitor"/>
     <br/><br/>			
-    <input type="submit" value="<?php echo ucfirst($accion);?> monitor" >
+    <input type="button" onclick="javascript:res(nombreMonitor.value,apellidosMonitor.value,descripcion.value,imagenMonitor.value,accion.value,idMonitor.value)" 
+    value="<?php echo ucfirst($accion);?> monitor" >
     <input type="Reset" id="reset" value="Borrar formulario" name="borrar">	
     <input type="button" value="Cierra" onclick="javascript:cierra()"> 
 </form>

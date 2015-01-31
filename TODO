@@ -1,14 +1,12 @@
-*Cargar las imagenes de los monitores/juegos en local (echo sin ajax en
-monitores...)
 *Areglar el formulario de inscripción
 *Incluir el cif en el aviso legal
 *Comprobar en php/form*.php que los campos no esten vacios y correctos
+*php/form*.php embellecerlos
 *Embellecer inicio_sesion.php
 *En la parte AJAx cerrar colocarle una cruz en vez de un boton
 *Cuando modificas en administracion la informacion cambia de locale
-*Arreglar la subida de imagenes con jquery
 *Poner iconos para el cambio de idioma y ponerlos debajo del banner
 
-*Implementar res en monitores como en juegos (Carlos)
-*Comprobar correctamente la operacion de borrado y controlar los errores (casi
-listo con Ajax, falta monitores) (Carlos)
+*Arreglar la subida de imagenes con jquery (carlos)
+*Cargar las imagenes de los monitores/juegos en local (echo sin ajax en
+monitores...)  (carlos)

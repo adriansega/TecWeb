@@ -32,15 +32,18 @@ if($accion=="insertar"){
     }else{ //Añade la informacion a la tabla
         $sql = "INSERT juegos(nombreJuego,descripcionJuego, imagenJuego,unidades) VALUES ('$nombreJuego','$descripcionJuego', '$descripcionJuego',$unidades)";
 
-        mysqli_query($con, $sql);
-        echo 'Juego añadido correctamente';
+        $res=mysqli_query($con, $sql);
+        if($res) echo "Juego añadido correctamente";
+        else echo "Hubo algun problema. Disculpas.";
     }
 } 
 
 if($accion=="modificar"){
     $sql = "UPDATE juegos SET nombreJuego='$nombreJuego',unidades=$unidades,descripcionJuego='$descripcionJuego' $imagen WHERE idJuego=$idJuego";
-    mysqli_query($con, $sql);      
-    echo "Juego modificado correctamente";
+    $res=mysqli_query($con, $sql);
+    if($res) echo "Juego modificado correctamente";
+    else echo "Hubo algun problema. Disculpas.";
+
 } 
 
 if($accion=="borrar"){
@@ -48,8 +51,9 @@ if($accion=="borrar"){
     $res = mysqli_query($con,$sql);
     if(mysqli_num_fields($res) == 1) {
         $sql = "DELETE FROM juegos WHERE idJuego='$idJuego'";
-        mysqli_query($con, $sql);
-        echo "Juego eliminado correctamente";
+        $res=mysqli_query($con, $sql);
+        if($res) echo "Juego borrado correctamente";
+        else echo "Hubo algun problema. Disculpas.";
     }else echo "Este juego no existe en la BD";
 } 
 
