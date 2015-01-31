@@ -48,7 +48,7 @@ if ($accion=="insertar") {
     <?php if ($imagenMonitor!="") { ?>
         <img src="<?php echo $row['imagenMonitor'];?>"/>
     <?php } ?>
-    <input type="file" name="imagenMonitor" id="imagenMonitor" value="<?php echo $imagenMonitor;?>"/>
+    <input type="file" name="imagenMonitor" id="imagenMonitor"/>
     <br/><br/>			
     <input type="submit" value="<?php echo ucfirst($accion);?> monitor" >
     <input type="Reset" id="reset" value="Borrar formulario" name="borrar">	

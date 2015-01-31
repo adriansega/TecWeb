@@ -9,7 +9,7 @@ if(isset($_SESSION['usuario'])){?>
          if (substr($uri,0,5)=="/php/") 
              echo '<li><a href="'.$ruta.'">Ir a inicio</a></li>';
          ?>
-        <li><a href="<?php echo $ruta;?>juego.php">Juegos</a></li>
+        <li><a href="<?php echo $ruta;?>php/juegos.php">Juegos</a></li>
         <li><a href="<?php echo $ruta;?>php/monitores.php">Monitores</a></li>
         <li><a href="<?php echo $ruta;?>comentarios.php">Dropbox</a></li>
         <li><a href="<?php echo $ruta;?>php/cerrar_sesion.php">Salir</a></li>

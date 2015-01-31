@@ -15,7 +15,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="css/fuentes.css" />
 <link type="text/css" rel="stylesheet" media="all" href="css/principal.css" />
 <!-- Incluimos la libreria jQuery -->
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/jquery-latest.min.js" type="text/javascript"></script>
 <!-- Incluimos el plugin -->
 <script src="js/bjqs.min.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>        
@@ -83,17 +83,7 @@
             </div></div> <!-- /content-area /.section, -->
         </div> <!-- /#content, -->
     </div> <!-- /#main-wrapper -->
-    <div id="footer">
-        <span id="contacto">Contacto con AFIM21 Almeria: Tlf 678468545 | nuriaguzmans@gmail.com&nbsp; | 
-           <a title="Aviso Legal" href="legal.html">Aviso Legal</a> | <a title="Mapa Web" href="sitemap.html">Mapa           Web</a> 
-		   | <?php 
-				if(isset($_SESSION['usuario'])){?>
-					<a title="Mapa Web" href="php/cerrar_sesion.php">Cerrar Sesión </a></span>
-			<?php	
-			}else{?>
-					<a title="Mapa Web" href="php/inicio_sesion.php">Administracion </a></span>
-			<?php }?>	
-    </div> <!-- /#footer -->
+                    <?php include_once "./php/footer.php"; ?>
 </div> <!-- /#page-wrapper -->
 
 </body>

@@ -1,14 +1,13 @@
-
-*Incorporar ajax a las rutinas php
-*Comprobar correctamente la operacion de borrado y controlar los errores
-*Incorporar juegos al menu 
-*Colocar la adminitracion en el footer de las paginas no solamente en inicio
-*Agregar el menu de administracion a todas las paginas de administracion
-*Cargar las imagenes de los monitores/juegos en local
+*Comprobar correctamente la operacion de borrado y controlar los errores (casi
+listo con Ajax, falta monitores)
+*Cargar las imagenes de los monitores/juegos en local (echo sin ajax en
+monitores...)
 *Areglar el formulario de inscripción
 *Incluir el cif en el aviso legal
-
 *Comprobar en anadirMonitor.html que los campos no esten vacios
 *Embellecer inicio_sesion.php
-*Eliminar los ficheros que no se usen...
 *En la parte AJAx cerrar colocarle una cruz en vez de un boton
+*Cuando modificas en administracion la informacion cambia de locale
+*Arreglar la subida de imagenes con jquery
+*Implementar res en monitores como en juegos
+*Poner iconos para el cambio de idioma y ponerlos debajo del banner

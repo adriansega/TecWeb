@@ -12,7 +12,7 @@ $resultado=$mysqli->query($query);
 <html>
   <head>
     <title>Administración de monitores</title>
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-latest.min.js" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" media="all" href="../css/monitores.css">
   </head>
   <body>
