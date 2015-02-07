@@ -32,7 +32,7 @@ if ($accion=="insertar") {
 
 ?>
 
-<form name="monitores" method="post" action="accionesMonitor.php" class="monitores" enctype="multipart/form-data">	 
+<form id="monitores" method="post" class="monitores" enctype="multipart/form-data">	 
     <input type="hidden" name="accion" value="<?php echo $accion;?>"> 
     <input type="hidden" name="idMonitor" value="<?php echo $idMonitor;?>">                                <h3><?php echo $titulo; ?></h3>
     Nombre: * 
@@ -50,7 +50,7 @@ if ($accion=="insertar") {
     <?php } ?>
     <input type="file" name="imagenMonitor" id="imagenMonitor"/>
     <br/><br/>			
-    <input type="button" onclick="javascript:res(nombreMonitor.value,apellidosMonitor.value,descripcion.value,imagenMonitor.value,accion.value,idMonitor.value)" 
+    <input type="button" onclick="javascript:res(nombreMonitor.value,apellidosMonitor.value,descripcion.value,accion.value,idMonitor.value)" 
     value="<?php echo ucfirst($accion);?> monitor" >
     <input type="Reset" id="reset" value="Borrar formulario" name="borrar">	
     <input type="button" value="Cierra" onclick="javascript:cierra()"> 

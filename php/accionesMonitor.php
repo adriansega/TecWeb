@@ -6,20 +6,22 @@ include_once "conexion.php";
 
 $accion=$_POST['accion'];
 
-$imagen="";
 $idMonitor=$_POST['idMonitor'];
 if($accion!="borrar") {
     $nombre=$_POST['nombreMonitor'];
     $apellidos=$_POST['apellidosMonitor'];
     $descripcion=$_POST['descripcionMonitor'];
+
+$imagen="";
+$destino="";
+if (isset($_FILES['imagenMonitor']) && $_FILES['imagenMonitor']['name']!="") {
+    $archivo=$_FILES['imagenMonitor']['tmp_name'];
+    $destino= "fotos/". $_FILES['imagenMonitor']['name'];
+    move_uploaded_file($archivo, $destino);
+    $imagen=", imagenMonitor='$destino'";
 }
 
-// if ($_FILES['imagenMonitor']['name']!="") {
-//     $archivo=$_FILES['imagenMonitor']['tmp_name'];
-//     $destino= "fotos/". $_FILES['imagenMonitor']['name'];
-//     move_uploaded_file($archivo, $destino);
-//     $imagen=", imagenMonitor='$destino'";
-// }
+}
 
 if($accion=="insertar"){
     //comprobamos que el nombre y apellidos no esten en la BD

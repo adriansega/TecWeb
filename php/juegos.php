@@ -58,23 +58,20 @@ $resultado=$mysqli->query($query);
         }
     }
 
-
     function res(nombre,descripcion,imagen,unidades,accion,id){
-        $.ajax({ url: "accionesJuego.php", data: { 
-                nombreJuego: nombre, 
-                descripcionJuego: descripcion, 
-                imagenJuego: imagen, 
-                unidades: unidades, 
-                accion:accion,
-                idJuego: id, 
-            },
-            //Para la imagen...
-            // cache: false,
-            // contentType: false,
-            // processData: false,
-            // mimeType: "multipart/form-data",
+        var formdata = new FormData();
+        var file=$("#imagenJuego")[0].files[0];
+        formdata.append("nombreJuego", nombre);
+        formdata.append("descripcionJuego", descripcion);
+				formdata.append("imagenJuego", file);
+        formdata.append("unidades", unidades);
+        formdata.append("accion", accion);
+        formdata.append("idJuego", id);
+        $.ajax({ url: "accionesJuego.php",
+            data: formdata,
+            processData: false,
+            contentType: false,
             type: "POST",
-            dataType : "text",
             success: function(resultado) { muestra(resultado,id,accion); },
             error: function( xhr, status, errorThrown ) {
                alert( "Error. Ocurrió algo inesperado: " + errorThrown );

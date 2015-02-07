@@ -5,7 +5,6 @@ if(!isset($_SESSION['usuario'])) return;
 include_once "conexion.php";
 
 $accion=$_POST['accion'];
-$imagen="";
 
 $idJuego=$_POST['idJuego'];
 
@@ -13,14 +12,17 @@ if($accion!="borrar") {
     $nombreJuego=$_POST['nombreJuego'];
     $descripcionJuego=$_POST['descripcionJuego'];
     $unidades=$_POST['unidades'];
+
+$imagen="";
+$destino="";
+if (isset($_FILES['imagenJuego']) && $_FILES['imagenJuego']['name']!="") {
+    $archivo=$_FILES['imagenJuego']['tmp_name'];
+    $destino= "fotos/". $_FILES['imagenJuego']['name'];
+    move_uploaded_file($archivo, $destino);
+    $imagen=", imagenJuego='$destino'";
 }
 
-// if ($_FILES['imagenJuego']['name']!="") {
-//     $archivo=$_FILES['imagenJuego']['tmp_name'];
-//     $destino= "fotos/". $_FILES['imagenJuego']['name'];
-//     move_uploaded_file($archivo, $destino);
-//     $imagen=", imagenJuego='$destino'";
-// }
+}
 
 if($accion=="insertar"){
     //comprobamos que el nombre y apellidos no esten en la BD
@@ -30,7 +32,7 @@ if($accion=="insertar"){
     if($contar>0){			//El juego ya existe
         echo 'Este juego ya existe en la BD';	
     }else{ //Añade la informacion a la tabla
-        $sql = "INSERT juegos(nombreJuego,descripcionJuego, imagenJuego,unidades) VALUES ('$nombreJuego','$descripcionJuego', '$descripcionJuego',$unidades)";
+        $sql = "INSERT juegos(nombreJuego,descripcionJuego, imagenJuego,unidades) VALUES ('$nombreJuego','$descripcionJuego', '$destino',$unidades)";
 
         $res=mysqli_query($con, $sql);
         if($res) echo "Juego añadido correctamente";

@@ -58,25 +58,23 @@ $resultado=$mysqli->query($query);
         }
     }
 
-    function res(nombre,apellidos, descripcion,imagen,accion,id){
-        $.ajax({ url: "accionesMonitor.php", data: { 
-                idMonitor: id, 
-                nombreMonitor: nombre, 
-                apellidosMonitor: apellidos, 
-                descripcionMonitor: descripcion, 
-                imagenMonitor: imagen, 
-                accion:accion,
-            },
-            //Para la imagen...
-            // cache: false,
-            // contentType: false,
-            // processData: false,
-            // mimeType: "multipart/form-data",
+    function res(nombre,apellidos, descripcion,accion,id){
+        var formdata = new FormData();
+        var file=$("#imagenMonitor")[0].files[0];
+				formdata.append("imagenMonitor", file);
+        formdata.append("idMonitor", id);
+        formdata.append("nombreMonitor", nombre);
+        formdata.append("apellidosMonitor", apellidos);
+        formdata.append("descripcionMonitor", descripcion);
+        formdata.append("accion", accion);
+        $.ajax({ url: "accionesMonitor.php",
+            data: formdata,
+            processData: false,
+            contentType: false,
             type: "POST",
-            dataType : "text",
             success: function(resultado) { muestra(resultado,id,accion); },
             error: function( xhr, status, errorThrown ) {
-               alert( "Error. Ocurrió algo inesperado: " + errorThrown );
+                alert( "Error. Ocurrió algo inesperado: " + errorThrown );
             }, 
         });
     }
@@ -88,11 +86,10 @@ $resultado=$mysqli->query($query);
         if(accion!="borrar") { location.reload(); }
         else{ $("#fila"+id).remove(); }
         cierra();
-     }
-
+    }
 
     // -->
-</script> 
+    </script> 
 
 <div id="centrado" style="display:none"><!--Aquí van los formularios Ajax--></diV>
 

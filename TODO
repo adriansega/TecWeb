@@ -7,6 +7,3 @@
 *Cuando modificas en administracion la informacion cambia de locale
 *Poner iconos para el cambio de idioma y ponerlos debajo del banner
 
-*Arreglar la subida de imagenes con jquery (carlos)
-*Cargar las imagenes de los monitores/juegos en local (echo sin ajax en
-monitores...)  (carlos)

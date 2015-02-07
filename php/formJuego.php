@@ -49,7 +49,7 @@ if ($accion=="insertar") {
     <?php if ($imagenJuego!="") { ?>
         <img src="<?php echo $row['imagenJuego'];?>"/>
     <?php } ?>
-    <input type="file" name="imagenJuego" id="imagenJuego" value="" />
+    <input type="file" name="imagenJuego" id="imagenJuego" />
     <br/><br/>			
     <input type="button" onclick="javascript:res(nombreJuego.value,descripcion.value,imagenJuego.value,unidades.value,accion.value,idJuego.value)" 
    value="<?php echo ucfirst($accion);?> juego" >
