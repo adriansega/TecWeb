@@ -31,7 +31,7 @@ if ($accion=="insertar") {
 
 ?>
 
-<form name="juegos" method="post" action="accionesJuego.php" class="monitores" enctype="multipart/form-data">	 
+<form id="juegos" method="post" class="monitores" enctype="multipart/form-data">	 
     <h3><?php echo $titulo; ?></h3> 
     <input type="hidden" name="accion" value="<?php echo $accion;?>"> 
     <input type="hidden" name="idJuego" value="<?php echo $idJuego;?>"> 
