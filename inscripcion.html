@@ -76,12 +76,19 @@ if (todoCorrecto ==true) {formulario.submit();}
  
 								<p style="font-weight: bold;">¡Curso gratuito para personas en riesgo de exclusión  	                                social o desempleados!</p>
 								<p style="font-weight: bold;">¡Cineforum gratuito!</p>
-                        		<br/><br />
+                        		<br/>
                         		<form name="formularioContacto" class="formularioTipo1" method="get" action="nuriaguzmans@gmail.com" enctyp"text/plain"					                                >
-								<label for="Nombre">Nombre de niño/a * </label> <input type="text" name="nombre" size="15" maxlength="50"><br><br>					
-								<label for="Apellidos"> Apellidos * </label> <input type="text" name="apellidos" size="25" maxlength="100">
+								<span>
+									<label for="Nombre">Nombre de niño/a *</label>				
+								    <label for="Apellidos" style="Position:Relative; left:12%;"> Apellidos *</label> 
+								</span>
+								<br/>
+								<span>
+									 <input type="text" name="nombre" size="21" maxlength="50">
+									 <input type="text" name="apellidos" size="25" maxlength="100" style="Position:Relative; left:6%;">
+									</span>
 								<br/><br/>
-								<label for="edad">Edad *</label> 
+								<label for="edad">Edad *</label> <br/>
 								<select id="edad" name="edad">
   								<option value="" selected="selected">- selecciona -</option>
   								<option value="4">4</option>
@@ -101,23 +108,38 @@ if (todoCorrecto ==true) {formulario.submit();}
 								<option value="18">18</option>
 								</select>
 								<br/><br/>
-								<label for="nombreTutor">Nombre del tutor/a legal *</label> <input type="text" name="tutor" size="15" maxlength="50">
+								<span>
+								<label for="nombreTutor">Nombre del tutor/a legal *</label>
+								<label for="apellidosTutor" style="Position:Relative; left:7%;">Apellidos *</label>
+								</span>
+								<br/>
+								<span>
+								 <input type="text" name="tutor" size="21" maxlength="50">
+								 <input type="text" name="apellidosTutor" size="25" maxlength="50" style="Position:Relative; left:6%;">
+								</span>
 								<br/><br/>
-								<label for="apellidosTutor">Apellidos *</label> <input type="text" name="apellidosTutor" size="15" maxlength="50">
+								<span>
+									<label for="Correo">Correo electrónico:</label>
+									<label for="Telefono" style="Position:Relative; left:13%;">Teléfono *:</label>									
+								</span>
+								 <br/>
+								<span>
+									<input type="text" value="@" name="correo" size="21" maxlength="100">
+									<input type="text" name="poblacion" size="9" maxlength="50" style="Position:Relative; left:6%;">							
+								</span>
 								<br/><br/>
-								<label for="Correo">Correo electrónico: </label><input type="text" value="@" name="correo" size="30" maxlength="100">
+								<label for="Actividad">Actividad *</label> <br/>
+								<span>
+								<input type="radio" name="taller" value="tallerJuegos"><label>Taller de aprendizaje a través del juego</label>							
+								<input type="radio" name="cine" value="cineForum" style="Position:Relative; left:8%;"><label style="Position:Relative; left:8%;">Cineforum</label>
+								</span>
 								<br/><br/>
-								<label for="Telefono">Teléfono *:</label> <input type="text" name="poblacion" size="9" maxlength="50">
-								<br/><br/>
-								<label for="Actividad">Actividad *</label> <input type="radio" name="taller" value="tallerJuegos">Taller de aprendizaje                                a través del juego
-								<input type="radio" name="cine" value="cineForum">Cineforum
-								<br><br>
 								<label for="Mensaje">Mensaje:</label><br>
-								<textarea cols="75" rows="8" name="opinion">Escriba aquí su mensaje...</textarea>
+								<textarea cols="60" rows="8" name="opinion">Escriba aquí su mensaje...</textarea>
 								</select>
-								<br/><br/>			
-								<input type="submit" value="Enviar formulario">
-								<input type="Reset" value="Borrar formulario">	
+								<br/><br/>	
+								<input type="submit" value="Enviar formulario"  style="Position:Relative; left:13%;">
+								<input type="Reset" value="Borrar formulario" style="Position:Relative; left:14%;">	
 								</form>
 								<br/>
 								<table width="*%" >
